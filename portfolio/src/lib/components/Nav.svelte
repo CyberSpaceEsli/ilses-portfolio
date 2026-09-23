@@ -10,7 +10,7 @@
     <ul class="menu menu-horizontal px-1">
       <li><a href="/gallery" class="hover:text-brown">Gallery</a></li>
       <li><a href="/about" class="hover:text-brown">About</a></li>
-      <li><a href="/resume" class="">Resume</a></li>
+      <li><a href="/resume" class="hover:text-brown">Resume</a></li>
     </ul>
   </div>
 
