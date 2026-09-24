@@ -7,23 +7,26 @@
   </div>
 
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 text-[16px]">
-      <li><a href="/projects" class="hover:text-brown font-weight-bold">Projects</a></li>
-      <li><a href="/about" class="hover:text-brown">About</a></li>
-      <li><a href="/gallery" class="hover:text-brown">Gallery</a></li>
-      <li><a href="/resume" class="hover:text-brown">Resume</a></li>
+    <ul class="nav-links flex items-center px-1 text-[20px]">
+      <li><a href="/projects" class="hover:text-bubble-gum px-2">projects</a></li>
+      <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
+      <li><a href="/about" class="hover:text-bubble-gum px-2">about</a></li>
+      <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
+      <li><a href="/gallery" class="hover:text-bubble-gum px-2">gallery</a></li>
+       <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
+      <li><a href="/resume" class="hover:text-bubble-gum px-2">resume</a></li>
     </ul>
   </div>
 
   <div class="navbar-end hidden lg:flex">
     <a
-      href="mailto:ilse.lohr@gmail.com"
+      href="mailto:ilse.lohr@gmail.com?subject=Hello&body=Hi Ilse, I'd like to get in touch..."
       class="group relative inline-flex h-18 w-18 items-center justify-center"
       aria-label="Mail"
     >
       <img src="/assets/letter.svg" alt="Mail closed" class="h-18 w-18 transition-opacity duration-150 group-hover:opacity-0" />
       <img src="/assets/letter-open.svg" alt="Mail open" class="absolute h-18 w-18 opacity-0 transition-opacity duration-150 group-hover:opacity-100" />
-      <span class="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap px-3 py-1 font-semibold text-coffee bg-pebble -rotate-10 text-lg font-lalezar opacity-0 shadow-sm transition-opacity duration-150 group-hover:opacity-100">
+      <span class="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap px-3 py-1 text-coffee bg-pebble -rotate-10 text-lg font-lalezar opacity-0 shadow-sm transition-opacity duration-150 group-hover:opacity-100">
         Mail Me!
       </span>
     </a>

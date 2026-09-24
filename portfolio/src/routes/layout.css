@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @plugin "daisyui";
 @import '@fontsource/lato';
-@import '@fontsource/lalezar';
+@import '@fontsource/lalezar/400.css';
 
 @theme {
   --color-bubble-gum: #FF6388;
@@ -11,7 +11,7 @@
   --color-yellow-glue: #FFDF6E;
   --color-sandstein: #E8D6B0;
   --color-pebble: #F7EBC3;
-  --color-pale-yellow: #FFF5D3;
+  --color-pale-yellow: #FFF8E0;
   --color-signal-green: #0ACF83;
   --color-needle: #76C3A5;
   --color-soft-green: #A0E9B3;
@@ -19,24 +19,60 @@
   --color-coffee: #281911;
   --color-latte: #544138;
   --color-cotton: #9C908A;
-  --color-pale-brown: #ECE6E2;
+  --color-pale-brown: #f6f5f1;
 }
 
 .font-lato {
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
+   font-style: normal;
 }
 
 .font-lalezar {
   font-family: 'Lalezar', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: #f6f5f1;
 }
 
-.footer-pattern {
+.card-overlapping-circles-pattern {
 	background-color: #281911;
 	background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f7ebc3' fill-opacity='0.7'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.card-point-stars-pattern {
+background-color: #a0e9b3;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%2376c3a5' fill-opacity='0.7'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hang-loose-icon {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.hang-loose-icon:hover {
+  animation: hangLooseWiggle 0.9s ease-in-out infinite;
+}
+
+
+@keyframes hangLooseWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  80% {
+    transform: rotate(-6deg);
+  }
 }
