@@ -1,14 +1,24 @@
 <script>
   const projects = [
     {
-      name: "Cort.ai",
-      category: "medtech, ai",
-      image: "/images/cort.png",
+      name: "WalkDD",
+      category: "iOS App",
+      image: "/assets/walkDD-flyer.png",
+    },
+     {
+      name: "WalkDD",
+      category: "iOS App",
+      image: "/assets/walkDD-phone.png",
     },
     {
-      name: "Zapo",
-      category: "b2b, SaaS",
-      image: "/images/zapo.png",
+      name: "React UX Analyzer Sample",
+      category: "VS CODE Extension",
+      image: "/assets/react-ux-analyzer.png",
+    },
+    {
+      name: "React UX Analyzer Sample",
+      category: "VS CODE Extension",
+      image: "/assets/react-ux-logo.png",
     }
   ];
 </script>
@@ -41,16 +51,16 @@
 
           <img
             src={projects[0].image}
-            alt="Cort.ai project"
-            class="absolute left-8 top-2 w-[75%] -rotate-6 rounded-2xl border-[7px] border-white shadow-sm"
+            alt="WalkDD flyer"
+            class="absolute left-8 top-2 w-[45%] -rotate-6 rounded-2xl border-[7px] border-pale-yellow shadow-sm"
           />
 
           <div
-            class="absolute bottom-8 right-4 h-44 w-48 rotate-3 overflow-hidden rounded-2xl border-[7px] border-whit"
+            class="absolute bottom-8 right-4 h-[90%] w-[40%] rotate-3 overflow-hidden rounded-2xl border-[7px] border-pale-yellow"
           >
             <img
-              src="/images/cort-detail.png"
-              alt=""
+              src="{projects[1].image}"
+              alt="WalkDD phone"
               class="h-full w-full object-cover"
             />
           </div>
@@ -109,21 +119,21 @@
         <div class="relative flex-1">
 
           <div
-            class="absolute left-8 top-4 w-[65%] rotate-4 overflow-hidden rounded-2xl border-[7px] border-white"
+            class="absolute left-8 top-4 w-[65%] rotate-4 overflow-hidden rounded-2xl border-[7px] border-cheeck-blush"
           >
             <img
-              src="/images/zapo.png"
-              alt="Zapo project"
+              src="{projects[2].image}"
+              alt="React UX Analyzer Sample project"
               class="w-full"
             />
           </div>
 
           <div
-            class="absolute bottom-5 right-6 w-48 -rotate-6 overflow-hidden rounded-2xl border-[7px] border-white"
+            class="absolute bottom-5 right-6 w-48 -rotate-6 overflow-hidden rounded-2xl border-[7px] border-cheeck-blush"
           >
             <img
-              src="/images/zapo-mobile.png"
-              alt=""
+              src="{projects[3].image}"
+              alt="React UX Analyzer Logo"
               class="w-full"
             />
           </div>
