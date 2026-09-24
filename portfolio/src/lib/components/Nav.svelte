@@ -1,5 +1,5 @@
 <!-- Navbar with dropdown, center logo and icon -->
-<div class="navbar bg-base-100 px-8 sm:px-18 md:px-24 lg:px-46">
+<div class="navbar px-8 sm:px-18 md:px-24 lg:px-46">
   <div class="navbar-start">
     <a href="/" class="">
       <img src="/assets/ilselöhr.svg" alt="Ilse Löhr" class="h-6 w-auto" />
@@ -8,6 +8,7 @@
 
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
+      <li><a href="/projects" class="hover:text-brown font-weight-bold">Projects</a></li>
       <li><a href="/gallery" class="hover:text-brown">Gallery</a></li>
       <li><a href="/about" class="hover:text-brown">About</a></li>
       <li><a href="/resume" class="hover:text-brown">Resume</a></li>
@@ -16,7 +17,7 @@
 
   <div class="navbar-end hidden lg:flex">
     <a
-      href="mailto:hello@ilse-portfolio.com"
+      href="mailto:ilse.lohr@gmail.com"
       class="group relative inline-flex h-18 w-18 items-center justify-center"
       aria-label="Mail"
     >
@@ -36,6 +37,7 @@
       <ul
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a href="/projects" class="hover:text-brown">Projects</a></li>
         <li><a href="/gallery" class="hover:text-brown">Gallery</a></li>
         <li><a href="/about" class="hover:text-brown">About</a></li>
         <li><a href="/resume" class="hover:text-brown">Resume</a></li>

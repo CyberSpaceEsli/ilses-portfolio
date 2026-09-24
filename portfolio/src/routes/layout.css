@@ -1,2 +1,37 @@
 @import 'tailwindcss';
 @plugin "daisyui";
+@import '@fontsource/lato';
+@import '@fontsource/lalezar';
+
+@theme {
+  --color-bubble-gum: #FF6388;
+  --color-cheeck-blush: #E991A6;
+  --color-lip-rose: #FF8688;
+  --color-pale-pink: #F6E7E7;
+  --color-yellow-glue: #FFDF6E;
+  --color-sandstein: #E8D6B0;
+  --color-pebble: #F7EBC3;
+  --color-pale-yellow: #FFF5D3;
+  --color-signal-green: #0ACF83;
+  --color-needle: #76C3A5;
+  --color-soft-green: #A0E9B3;
+  --color-pale-green: #CEE7D4;
+  --color-coffee: #281911;
+  --color-latte: #544138;
+  --color-cotton: #9C908A;
+  --color-pale-brown: #ECE6E2;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-lalezar {
+  font-family: 'Lalezar', sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
