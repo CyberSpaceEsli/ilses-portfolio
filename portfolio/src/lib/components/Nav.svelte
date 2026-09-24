@@ -8,7 +8,7 @@
 
   <div class="navbar-center hidden lg:flex">
     <ul class="nav-links flex items-center px-1 text-[20px]">
-      <li><a href="/projects" class="hover:text-bubble-gum px-2">projects</a></li>
+      <li><a href="#projects" class="hover:text-bubble-gum px-2">projects</a></li>
       <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
       <li><a href="/about" class="hover:text-bubble-gum px-2">about</a></li>
       <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
@@ -40,7 +40,7 @@
       <ul
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a href="/projects" class="hover:text-brown">Projects</a></li>
+        <li><a href="#projects" class="hover:text-brown">Projects</a></li>
         <li><a href="/about" class="hover:text-brown">About</a></li>
         <li><a href="/gallery" class="hover:text-brown">Gallery</a></li>
         <li><a href="/resume" class="hover:text-brown">Resume</a></li>

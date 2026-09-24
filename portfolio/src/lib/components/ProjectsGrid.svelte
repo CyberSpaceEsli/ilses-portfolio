@@ -13,7 +13,7 @@
   ];
 </script>
 
-<section class="mx-auto min-h-content py-24 px-8 sm:px-18 md:px-24 lg:px-46">
+<section id="projects" class="mx-auto min-h-content py-24 px-8 sm:px-18 md:px-24 lg:px-46">
 
   <div class="mb-12">
     <h3 class="text-5xl font-lalezar tracking-tight">
@@ -32,7 +32,7 @@
 
     <!-- CORT.AI -->
     <article
-      class="card col-span-3 row-span-2 overflow-hidden rounded-4xl bg-base-200"
+      class="card col-span-3 row-span-2 overflow-hidden rounded-4xl bg-cotton"
     >
       <div class="relative flex h-full min-h-95 flex-col justify-between p-8">
 
@@ -46,7 +46,7 @@
           />
 
           <div
-            class="absolute bottom-8 right-4 h-44 w-48 rotate-3 overflow-hidden rounded-2xl border-[7px] border-white bg-stone-500"
+            class="absolute bottom-8 right-4 h-44 w-48 rotate-3 overflow-hidden rounded-2xl border-[7px] border-whit"
           >
             <img
               src="/images/cort-detail.png"
@@ -60,7 +60,7 @@
         <!-- Caption -->
         <div class="flex items-baseline gap-2 text-xl">
           <span class="font-medium font-lalezar">WalkDD</span>
-          <span class="text-base-content/50 text-[16px]">family project</span>
+          <span class="text-base-content/50 text-[16px]">iOS App</span>
         </div>
 
       </div>
@@ -85,7 +85,7 @@
 
     <!-- BOTTOM LEFT COLOUR TILE -->
     <div
-      class="col-start-1 row-start-3 rounded-4xl bg-signal-green"
+      class="col-start-1 row-start-3 rounded-4xl bg-pale-pink"
     >
       <div class="flex h-full items-center justify-center">
         <div class="text-6xl hang-loose-icon">👌🏼</div>
@@ -101,7 +101,7 @@
 
     <!-- ZAPO -->
     <article
-      class="card col-start-2 row-start-3 col-span-3 row-span-2 overflow-hidden rounded-4xl bg-base-200"
+      class="card col-start-2 row-start-3 col-span-3 row-span-2 overflow-hidden rounded-4xl bg-cotton"
     >
       <div class="relative flex h-full min-h-95 flex-col justify-between p-8">
 
@@ -132,8 +132,8 @@
 
         <!-- Caption -->
         <div class="flex items-baseline gap-2 text-xl">
-          <span class="font-medium font-lalezar">jinx</span>
-          <span class="text-base-content/50 text-[16px]">uni project</span>
+          <span class="font-medium font-lalezar">React UX Analyzer</span>
+          <span class="text-base-content/50 text-[16px]">VS CODE Extension</span>
         </div>
 
       </div>

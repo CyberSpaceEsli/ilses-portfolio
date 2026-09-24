@@ -18,7 +18,7 @@
   --color-pale-green: #CEE7D4;
   --color-coffee: #281911;
   --color-latte: #544138;
-  --color-cotton: #9C908A;
+  --color-cotton: #E4DBD6;
   --color-pale-brown: #f6f5f1;
 }
 
@@ -38,6 +38,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #281911;
   background-color: #f6f5f1;
 }
 
@@ -48,8 +49,8 @@ body {
 
 
 .card-point-stars-pattern {
-background-color: #a0e9b3;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%2376c3a5' fill-opacity='0.7'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+background-color: #e991a6;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23fff8e0' fill-opacity='0.7'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .hang-loose-icon {
@@ -59,6 +60,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .hang-loose-icon:hover {
   animation: hangLooseWiggle 0.9s ease-in-out infinite;
+}
+
+/* Play the hang loose wiggle once (use for page-load animation) */
+.play-hang-loose {
+  animation: hangLooseWiggle 0.9s ease-in-out;
 }
 
 

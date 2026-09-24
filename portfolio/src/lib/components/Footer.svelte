@@ -3,7 +3,7 @@
     <aside class="flex flex-col items-start gap-3">
       <img src="/assets/hang-loose-circle.svg" alt="hang loose icon in circle" class="hang-loose-icon h-18 w-18" />
       <p class="max-w-xs">
-        Hang loose or hang tight, either way the vibe is right.
+        Hang tight or hang loose, either way the vibe is right.
         <br />
         © Ilse Löhr, 2026. All rights reserved.
       </p>
@@ -11,7 +11,7 @@
 
     <nav class="flex items-center justify-center font-lalezar text-xl">
       <div class="flex flex-row items-center gap-4 md:gap-6 text-md">
-        <a href="/projects" class="hover:text-bubble-gum">Projects</a>
+        <a href="#projects" class="hover:text-bubble-gum">Projects</a>
         <a href="/about" class="hover:text-bubble-gum">About</a>
         <a href="/gallery" class="hover:text-bubble-gum">Gallery</a>
         <a href="/resume" class="hover:text-bubble-gum">Resume</a>
