@@ -39,7 +39,8 @@
 			category: "iOS App",
 			description:
 				"A hiking app for Dresden and Saxon Switzerland with clear route details at a glance.",
-			frame: "border-pale-yellow",
+			frame: "lg:border-pale-yellow",
+      mFrame: "max-lg:border-pale-brown", 
 			images: [
 				{ src: "/assets/walkDD-flyer.png", alt: "WalkDD flyer" },
 				{
@@ -55,7 +56,8 @@
 			category: "VS Code Extension",
 			description:
 				"A VS Code extension that spots usability issues in React components while you code.",
-			frame: "border-cheeck-blush",
+			frame: "lg:border-cheeck-blush",
+      mFrame: "max-lg:border-pale-brown", 
 			images: [
 				{
 					src: "/assets/react-ux-analyzer.png",
@@ -75,7 +77,8 @@
 			name: "MoodChange",
 			category: "iOS App",
 			description: "An iOS app that helps you notice and shift your mood, one small step at a time.",
-			frame: "border-pebble",
+			frame: "lg:border-pebble",
+      mFrame: "max-lg:border-pale-brown", 
 			images: [
 				{
 					src: "/assets/moodchange-logo.png",
@@ -95,7 +98,8 @@
 			name: "jinx",
 			category: "Web Dashboard",
 			description: "A web dashboard that turns complex data into a clear, easy-to-scan overview.",
-			frame: "border-lip-rose",
+			frame: "lg:border-lip-rose",
+      mFrame: "max-lg:border-pale-brown", 
 			images: [
 				{
 					src: "/assets/jinx-dashboard.png",
@@ -148,7 +152,9 @@
 								<img
 									src={img.src}
 									alt={img.alt}
-									class="absolute rounded-2xl border-[7px] {project.frame} {img.pos ?? positions[j]} {img.m ?? mobilePositions[j]}"
+									class="absolute rounded-2xl border-[7px]
+	                {img.pos ?? positions[j]} {img.m ?? mobilePositions[j]}
+	                {project.frame} {project.mFrame ?? project.frame.replace('lg:', 'max-lg:')}"
 								/>
 							{/each}
 						</div>
