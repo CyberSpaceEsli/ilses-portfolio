@@ -22,7 +22,7 @@
         <a href="/about" class="text-center hover:text-bubble-gum">About</a>
         <a href="/gallery" class="text-center hover:text-bubble-gum">Gallery</a>
         <a href="/resume" class="text-center hover:text-bubble-gum">Resume</a>
-        <a href="/resume" class="text-center hover:text-bubble-gum">Impressum</a>
+        <a href="/impressum" class="text-center hover:text-bubble-gum">Impressum</a>
       </div>
     </nav>
 
