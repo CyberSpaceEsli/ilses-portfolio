@@ -118,7 +118,7 @@
 	];
 </script>
 
-<section id="projects" class="mx-auto min-h-content py-24 px-8 sm:px-18 md:px-24 lg:px-46">
+<section id="projects" class="mx-auto min-h-content pt-24 px-8 sm:px-18 md:px-24 lg:px-46">
 	<div class="mb-12">
 		<h3 class="text-5xl font-lalezar tracking-tight">
 			Projects I've had a hand in shaping

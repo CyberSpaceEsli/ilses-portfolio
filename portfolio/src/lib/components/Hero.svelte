@@ -100,7 +100,7 @@
             </svg>
 
             <!-- badge -->
-            <div class="mt-5 {badge.bg} {badge.text} font-semibold rounded-lg px-5 py-2.5 text-sm font-medium shadow-md">
+            <div class="mt-5 {badge.bg} {badge.text} rounded-lg px-5 py-2.5 text-sm shadow-md">
               {badge.label}
             </div>
           </div>
@@ -117,8 +117,8 @@
             aria-label="Mail"
         >
             <svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2" />
-              <path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2.5" />
+              <path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <span>Mail me</span>
         </a>
