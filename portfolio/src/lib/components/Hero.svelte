@@ -6,7 +6,8 @@
       label: 'unique',
       bg: 'bg-pebble',
       text: 'text-coffee',
-      rotate: '-rotate-2',
+      rotate: 'rotate-4',
+      mRotate: '-rotate-2',
       offset: '8%',
       // CHANGED: bottom-center circle in the mobile clover cluster
       pos: 'left-1/2 bottom-2 -translate-x-1/2'
@@ -15,7 +16,8 @@
       label: 'appealing',
       bg: 'bg-pebble',
       text: 'text-coffee',
-      rotate: '-rotate-16',
+      rotate: '-rotate-6',
+      mRotate: '-rotate-16',
       offset: '38%',
       // CHANGED: top-left circle, pulled off the edge so it can't reach the text above
       pos: 'left-1 top-4'
@@ -24,7 +26,8 @@
       label: 'intuitive',
       bg: 'bg-pebble',
       text: 'text-coffee',
-      rotate: 'rotate-16',
+      rotate: 'rotate-5',
+      mRotate: 'rotate-16',
       offset: '68%',
       // CHANGED: top-right circle
       pos: 'right-1 top-4'
@@ -63,7 +66,7 @@
         <div class="relative mx-auto aspect-square h-44 w-44 max-w-full">
           {#each badges as badge}
             <div
-              class="absolute z-0 {badge.pos} {badge.rotate} {badge.bg} {badge.text}
+              class="absolute z-0 {badge.pos} {badge.mRotate} {badge.bg} {badge.text}
                      flex h-20 w-20 items-center justify-center rounded-full text-sm font-semibold shadow-md"
             >
               {badge.label}
@@ -82,7 +85,7 @@
       </div>
 
       <!-- Desktop clothesline -->
-      <div class="relative mx-auto w-full max-w-md pt-6 lg:border-t-2 lg:border-dashed lg:border-latte/20 lg:pt-6 lg:max-w-none">
+      <div class="relative mx-auto w-full max-w-md pt-6 lg:border-t-2 lg:border-dashed lg:border-cotton/80 lg:pt-6 lg:max-w-none">
         {#each badges as badge}
           <div
             class="absolute -translate-x-1/2 {badge.rotate} max-lg:hidden lg:block"
@@ -106,10 +109,10 @@
 
       <div class="mx-auto flex w-full max-w-md justify-center border-t border-dashed border-latte/20 lg:hidden">
 
-           <a href="mailto:ilse.lohr@gmail.com?subject=Hello&body=Hi Ilse, I'd like to get in touch..."
+           <a href="mailto:ilse.lohr@googlemail.com?subject=Hello&body=Hi Ilse, I'd like to get in touch..."
             class="mt-4 inline-flex items-center justify-center gap-2
                 rounded-xl bg-bubble-gum px-12 py-2
-                text-sm font-medium text-pale-yellow
+                text-sm font-medium text-pebble
                 transition-transform hover:scale-105"
             aria-label="Mail"
         >

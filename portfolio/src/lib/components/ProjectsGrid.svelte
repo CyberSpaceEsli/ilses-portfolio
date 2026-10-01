@@ -40,7 +40,7 @@
 			description:
 				"A hiking app for Dresden and Saxon Switzerland with clear route details at a glance.",
 			frame: "lg:border-pale-yellow",
-      mFrame: "max-lg:border-pale-brown", 
+      mFrame: "max-lg:border-pale-yellow", 
 			images: [
 				{ src: "/assets/walkDD-flyer.png", alt: "WalkDD flyer" },
 				{
@@ -57,7 +57,7 @@
 			description:
 				"A VS Code extension that spots usability issues in React components while you code.",
 			frame: "lg:border-cheeck-blush",
-      mFrame: "max-lg:border-pale-brown", 
+      mFrame: "max-lg:border-pale-yellow", 
 			images: [
 				{
 					src: "/assets/react-ux-analyzer.png",
@@ -78,7 +78,7 @@
 			category: "iOS App",
 			description: "An iOS app that helps you notice and shift your mood, one small step at a time.",
 			frame: "lg:border-pebble",
-      mFrame: "max-lg:border-pale-brown", 
+      mFrame: "max-lg:border-pale-yellow", 
 			images: [
 				{
 					src: "/assets/moodchange-logo.png",
@@ -99,7 +99,7 @@
 			category: "Web Dashboard",
 			description: "A web dashboard that turns complex data into a clear, easy-to-scan overview.",
 			frame: "lg:border-lip-rose",
-      mFrame: "max-lg:border-pale-brown", 
+      mFrame: "max-lg:border-pale-yellow", 
 			images: [
 				{
 					src: "/assets/jinx-dashboard.png",
@@ -123,7 +123,7 @@
 		<h3 class="text-5xl font-lalezar tracking-tight">
 			Projects I've had a hand in shaping
 		</h3>
-		<p class="mt-4 max-w-2xl text-xl leading-relaxed">
+		<p class="mt-4 max-w-2xl text-lg leading-relaxed">
 			My goal is to give digital products visibility and shape their easy feel of use
 			<span class="lg:whitespace-nowrap">from first impression to everyday interaction >></span>
 		</p>
@@ -165,7 +165,7 @@
 								<span class="font-lalezar font-medium">{project.name}</span>
 								<span class="text-base-content/50 text-[16px]">{project.category}</span>
 							</div>
-							<p class="text-base leading-relaxed text-base-content/70 lg:hidden">
+							<p class="text-base leading-relaxed text-coffee/70 lg:hidden">
 								{project.description}
 							</p>
 						</div>
