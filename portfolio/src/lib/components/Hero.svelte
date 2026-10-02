@@ -67,7 +67,7 @@
           {#each badges as badge}
             <div
               class="absolute z-0 {badge.pos} {badge.mRotate} {badge.bg} {badge.text}
-                     flex h-20 w-20 items-center justify-center rounded-full text-sm font-semibold shadow-md"
+                     flex h-20 w-20 items-center justify-center rounded-full text-sm font-semibold shadow-md font-lalezar"
             >
               {badge.label}
             </div>
@@ -85,7 +85,7 @@
       </div>
 
       <!-- Desktop clothesline -->
-      <div class="relative mx-auto w-full max-w-md pt-6 lg:border-t-2 lg:border-dashed lg:border-cotton/80 lg:pt-6 lg:max-w-none">
+      <div class="relative mx-auto w-full max-w-md font-lalezar pt-6 lg:border-t-2 lg:border-dashed lg:border-cotton/80 lg:pt-6 lg:max-w-none">
         {#each badges as badge}
           <div
             class="absolute -translate-x-1/2 {badge.rotate} max-lg:hidden lg:block"
@@ -100,27 +100,23 @@
             </svg>
 
             <!-- badge -->
-            <div class="mt-5 {badge.bg} {badge.text} rounded-lg px-5 py-2.5 text-sm shadow-md">
+            <div class="mt-5 {badge.bg} {badge.text} rounded-lg px-5 py-2.5 text-sm shadow-md font-lalezar">
               {badge.label}
             </div>
           </div>
         {/each}
       </div>
 
-      <div class="mx-auto flex w-full max-w-md justify-center border-t border-dashed border-latte/20 lg:hidden">
+      <div class="mx-auto flex w-full max-w-md justify-center border-t border-dashed border-latte/25 lg:hidden">
 
            <a href="mailto:ilse.lohr@googlemail.com?subject=Hello&body=Hi Ilse, I'd like to get in touch..."
-            class="mt-4 inline-flex items-center justify-center gap-2
+            class="mt-4 inline-flex items-center gap-2
                 rounded-xl bg-bubble-gum px-12 py-2
-                text-sm font-medium text-pebble
-                transition-transform hover:scale-105"
+                text-sm font-medium text-pebble"
             aria-label="Mail"
         >
-            <svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2.5" />
-              <path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <span>Mail me</span>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="h-5 w-5 text-pebble" aria-hidden="true"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.29289 5.29289C3.47386 5.11193 3.72386 5 4 5H20C20.2761 5 20.5261 5.11193 20.7071 5.29289M3.29289 5.29289C3.11193 5.47386 3 5.72386 3 6V18C3 18.5523 3.44772 19 4 19H14M3.29289 5.29289L5 7.00006M20.7071 5.29289C20.8881 5.47386 21 5.72386 21 6V18C21 18.5523 20.5523 19 20 19H18M20.7071 5.29289L13.4142 12.5857C12.6331 13.3668 11.3668 13.3668 10.5857 12.5857L8 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            <span class="whitespace-nowrap">Mail me</span>
         </a>
      </div>
     </div>

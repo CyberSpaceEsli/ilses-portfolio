@@ -124,8 +124,8 @@
 			Projects I've had a hand in shaping
 		</h3>
 		<p class="mt-4 max-w-2xl text-lg leading-relaxed">
-			My goal is to give digital products visibility and shape their easy feel of use
-			<span class="lg:whitespace-nowrap">from first impression to everyday interaction >></span>
+			My goal is to give digital products visibility and shape their easy feel of use	
+      <span class="lg:whitespace-nowrap">from first impression to everyday interaction. </span>
 		</p>
 	</div>
 

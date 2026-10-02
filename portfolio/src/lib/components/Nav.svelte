@@ -64,12 +64,9 @@
       aria-label={menuOpen ? 'Close menu' : 'Open menu'}
       aria-expanded={menuOpen}
       aria-controls="mobile-menu"
-      class="relative z-50"
-    >
+      class="relative z-50">
       {#if menuOpen}
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
+        <svg aria-hidden="true" class="h-5 w-5 text-coffee" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 5L5 19M5 5L9.5 9.5M12 12L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
       {:else}
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
@@ -95,16 +92,16 @@
     <nav class="w-full">
       <div class="bg-pale-brown flex flex-1 flex-col items-center justify-center py-12">
       <a href="#projects" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Projects</a>
-      <div class="h-px w-40 border-t border-dashed border-latte/20"></div>
+      <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
       <a href="/about" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">About</a>
-      <div class="h-px w-40 border-t border-dashed border-latte/20"></div>
+      <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
       <a href="/gallery" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Gallery</a>
-      <div class="h-px w-40 border-t border-dashed border-latte/20"></div>
+      <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
       <a href="/resume" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Resume</a>
-      <div class="h-px w-40 border-t border-dashed border-latte/20"></div>
+      <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
       <a href="/impressum" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Impressum</a>
     </div>
