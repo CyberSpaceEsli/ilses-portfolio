@@ -5,7 +5,6 @@
 		"bottom-8 right-4 h-[90%] w-[40%] rotate-3 object-cover"
 	];
 
-	// NEW: default positions for mobile + iPad (below lg). Same edges as `positions`.
 	const mobilePositions = [
 		"max-lg:left-0 max-lg:top-0 max-lg:w-[62%] max-lg:-rotate-3",
 		"max-lg:bottom-0 max-lg:right-0 max-lg:h-auto max-lg:w-[48%] max-lg:rotate-3"
@@ -37,10 +36,12 @@
 		{
 			name: "WalkDD",
 			category: "iOS App",
+			href: "https://apps.apple.com/de/app/walkdd/id6761303789",
 			description:
 				"A hiking app for Dresden and Saxon Switzerland with clear route details at a glance.",
 			frame: "lg:border-pale-yellow",
-      mFrame: "max-lg:border-pale-yellow", 
+			mFrame: "max-lg:border-pale-yellow",
+			hoverCircle: "fill-pebble",
 			images: [
 				{ src: "/assets/walkDD-flyer.png", alt: "WalkDD flyer" },
 				{
@@ -54,10 +55,12 @@
 		{
 			name: "React UX Analyzer",
 			category: "VS Code Extension",
+			href: "https://marketplace.visualstudio.com/items?itemName=CyberSpaceEsli.react-ux-analyzer",
 			description:
 				"A VS Code extension that spots usability issues in React components while you code.",
 			frame: "lg:border-cheeck-blush",
-      mFrame: "max-lg:border-pale-yellow", 
+			mFrame: "max-lg:border-pale-yellow",
+			hoverCircle: "fill-cheeck-blush",
 			images: [
 				{
 					src: "/assets/react-ux-analyzer.png",
@@ -76,9 +79,11 @@
 		{
 			name: "MoodChange",
 			category: "iOS App",
+			href: "https://apps.apple.com/de/app/walkdd/id6761303789",
 			description: "An iOS app that helps you notice and shift your mood, one small step at a time.",
 			frame: "lg:border-pebble",
-      mFrame: "max-lg:border-pale-yellow", 
+			mFrame: "max-lg:border-pale-yellow",
+			hoverCircle: "fill-yellow-glue",
 			images: [
 				{
 					src: "/assets/moodchange-logo.png",
@@ -97,9 +102,11 @@
 		{
 			name: "jinx",
 			category: "Web Dashboard",
+			href: "https://jinx-team.vercel.app/",
 			description: "A web dashboard that turns complex data into a clear, easy-to-scan overview.",
 			frame: "lg:border-lip-rose",
-      mFrame: "max-lg:border-pale-yellow", 
+			mFrame: "max-lg:border-pale-yellow",
+			hoverCircle: "fill-lip-rose",
 			images: [
 				{
 					src: "/assets/jinx-dashboard.png",
@@ -118,7 +125,7 @@
 	];
 </script>
 
-<section id="projects" class="mx-auto min-h-content pt-24 px-8 sm:px-18 md:px-24 lg:px-46">
+<section id="projects" class="mx-auto min-h-content py-24 px-8 sm:px-18 md:px-24 lg:py-20 lg:px-46">
 	<div class="mb-12">
 		<h3 class="text-5xl font-lalezar tracking-tight">
 			Projects I've had a hand in shaping
@@ -140,9 +147,33 @@
 
 				<!-- Big project card (CHANGED: grid placement only from lg) -->
 				<article
-					class="card overflow-hidden rounded-4xl bg-cotton lg:col-span-3 lg:row-span-2 lg:row-start-1
+					class="card group relative overflow-hidden rounded-4xl bg-cotton lg:col-span-3 lg:row-span-2 lg:row-start-1
 					       {flipped ? 'lg:col-start-2' : 'lg:col-start-1'}"
 				>
+					<div class="pointer-events-none absolute inset-0 hidden overflow-hidden rounded-4xl lg:block z-30">
+						<div class="project-hover-circle absolute left-1/2 top-1/2 h-lg w-lg rounded-full" style="width: 58rem; height: 58rem;">
+							<svg viewBox="0 0 1000 1000" class="h-full w-full">
+								<circle cx="500" cy="500" r="460" class={project.hoverCircle ?? 'fill-pale-yellow'} />
+							</svg>
+
+							<div class="project-hover-copy pointer-events-auto absolute left-1/2 top-1/2 z-40 w-[60%] -translate-x-1/2 -translate-y-1/2 text-left text-coffee">
+								<div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+									<div class="font-lalezar text-2xl leading-tight">{project.name}</div>
+									<div class="text-md text-coffee/70">{project.category}</div>
+								</div>
+								<div class="mt-3 text-base leading-relaxed">{project.description}</div>
+								<a
+									href={project.href}
+									class="mt-6 inline-flex items-center gap-1 border-b-2 border-dashed font-lalezar text-lg text-coffee hover:text-latte/70"
+                  aria-label="Visit project"
+								>
+									Visit project
+									<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 17V7L16 11M10 9L8 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
 					<!-- CHANGED: smaller padding + no forced min height below lg -->
 					<div class="relative flex h-full flex-col justify-between gap-5 p-5 sm:p-8 lg:min-h-95 lg:gap-0">
 
@@ -194,3 +225,28 @@
 		{/each}
 	</div>
 </section>
+
+<style>
+	.project-hover-circle {
+		transform: translate(-58%, 58%) scale(0.72);
+		transform-origin: center;
+		opacity: 0;
+		transition:
+			transform 720ms cubic-bezier(0.22, 1, 0.36, 1),
+			opacity 720ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.group:hover .project-hover-circle {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+
+	.project-hover-copy {
+		opacity: 0;
+		transition: opacity 720ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.group:hover .project-hover-copy {
+		opacity: 1;
+	}
+</style>

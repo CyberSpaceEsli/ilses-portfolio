@@ -6,7 +6,7 @@
   ];
 </script>
 
-<section id="teaser" class="mx-auto min-h-content py-24 px-8 sm:px-18 md:px-24 lg:px-46">
+<section id="teaser" class="mx-auto min-h-content py-24 px-8 sm:px-18 md:px-24 lg:py-20 lg:px-46">
     <div class="mb-12">
 		<h3 class="text-5xl font-lalezar tracking-tight">
 			Behind the pixels
@@ -16,7 +16,7 @@
             I find that feeling in nature, travel, and the outdoors, where I capture memories by camera and find creative inspirations.
 		</p>
 
-        <div class="mx-auto flex w-full max-w-md mt-2 lg:mx-0">
+        <div class="mx-auto flex w-full max-w-md mt-2 md:mx-0">
 
            <a href="/about"
             class="mt-4 inline-flex gap-2 items-center justify-center
@@ -31,7 +31,7 @@
      </div>
 	</div>
 
-    <div class="relative mx-auto w-full max-w-md px-2 pt-10 pb-4 lg:mx-0">
+    <div class="relative mx-auto w-full max-w-md px-2 pt-10 pb-4 md:mx-0">
   <!-- clothesline -->
   <div class="absolute left-0 right-0 top-8 border-t-2 border-dashed border-cotton/80" aria-hidden="true"></div>
  
@@ -46,7 +46,7 @@
           <circle cx="14" cy="12" r="2" class="fill-cotton" />
         </svg>
  
-        <div class="rounded-lg bg-pale-yellow p-1.5 shadow-md transition-transform hover:scale-105">
+        <div class="rounded-lg bg-pebble p-1.5 shadow-md transition-transform hover:scale-105">
           <img
             src={photo.src}
             alt={photo.alt}
@@ -54,7 +54,7 @@
           />
         </div>
  
-        <span class="mt-3 rounded-full bg-pale-yellow px-3 py-1 text-xs text-coffee font-lalezar {photo.rotate} shadow-sm">
+        <span class="mt-3 rounded-full bg-pebble px-3 py-1 text-xs text-coffee font-lalezar {photo.rotate} shadow-sm">
           {photo.caption}
         </span>
         </div>
