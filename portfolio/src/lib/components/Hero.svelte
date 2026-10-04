@@ -13,7 +13,7 @@
       pos: 'left-1/2 bottom-2 -translate-x-1/2'
     },
     {
-      label: 'appealing',
+      label: 'intuitive',
       bg: 'bg-pebble',
       text: 'text-coffee',
       rotate: '-rotate-6',
@@ -23,7 +23,7 @@
       pos: 'left-1 top-4'
     },
     {
-      label: 'intuitive',
+      label: 'inclusive',
       bg: 'bg-pebble',
       text: 'text-coffee',
       rotate: 'rotate-5',
@@ -48,10 +48,10 @@
   <div class="flex flex-col lg:flex-row items-center justify-between w-full gap-12">
 
     <div class="flex-1 flex flex-col items-center text-center lg:items-start lg:text-left justify-center">
-      <span class="p-1 text-bubble-gum">Hang tight with me &</span>
+      <span class="p-1 text-bubble-gum">Hang out with me &</span>
       <h1 class="text-5xl md:text-6xl font-lalezar font-bold mb-4">Keep the web creative.</h1>
       <p class="text-lg leading-relaxed md:mb-10 text-coffee max-w-lg">
-        Because of my visual eye I notice when something's a pixel off. What drives me is the person on the other side of the screen.
+        Thanks to my eye for visuals, I notice when something's a pixel off. What drives me is the person on the other side of the screen.
         That's why I design interfaces with precision, so they feel and look:
       </p>
 

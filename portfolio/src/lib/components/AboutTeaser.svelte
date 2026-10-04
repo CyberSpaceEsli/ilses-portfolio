@@ -6,7 +6,7 @@
   ];
 </script>
 
-<section id="teaser" class="mx-auto min-h-content py-24 px-8 sm:px-18 md:px-24 lg:py-20 lg:px-46">
+<section id="teaser" class="mx-auto min-h-content pb-24 px-8 sm:px-18 md:px-24 lg:py-20 lg:px-46">
     <div class="mb-12">
 		<h3 class="text-5xl font-lalezar tracking-tight">
 			Behind the pixels

@@ -38,7 +38,29 @@
       <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
       <li><a href="/gallery" class="hover:text-bubble-gum px-2">gallery</a></li>
        <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
-      <li><a href="/resume" class="hover:text-bubble-gum px-2">resume</a></li>
+      <li>
+        <a
+          href="/resume"
+          download
+          title="Download CV"
+          class="group px-2 hover:text-bubble-gum"
+          aria-label="Download resume as PDF"
+        >  
+        <span class="inline-flex items-center hover:border-b hover:border-dashed group-hover:border-bubble-gum">
+          <span>resume</span>
+          <svg
+            class="h-8 w-8 shrink-0 translate-y-0.5 text-coffee transition-transform duration-150 group-hover:translate-y-1 group-hover:text-bubble-gum"
+            viewBox="-2.4 -2.4 28.80 28.80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M12 7L12 17L16 13M10 15L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </span>
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -100,7 +122,16 @@
       <a href="/gallery" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Gallery</a>
       <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
-      <a href="/resume" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Resume</a>
+
+      <a
+        href="/resume"
+        on:click={closeMenu}
+        download
+        aria-label="Download resume as PDF"
+        class="font-lalezar text-3xl text-coffee py-5"
+      >
+        Resume <span class="font-lato text-xl">[PDF]</span>
+      </a>
       <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
       <a href="/impressum" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Impressum</a>
