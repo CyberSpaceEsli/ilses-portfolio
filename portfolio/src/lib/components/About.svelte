@@ -59,7 +59,7 @@
     <!-- Intro -->
     <div class="md:px-10">
     <section class="flex flex-col lg:flex-row items-center justify-between">
-      <div class="mb-10 md:mb-0 md:w-1/2 md:p-10">
+      <div class="mb-10 md:mb-0 md:w-1/2 md:px-10">
        <!--<div class="relative h-32 w-32 shrink-0 md:h-64 md:w-64 lg:h-85 lg:w-85">
         <span class="absolute left-2 top-2 h-16 w-16 rounded-full bg-latte border-4 border-pebble"></span>
         <span class="absolute -right-3 bottom-16 h-14 w-14 rounded-full bg-yellow-glue border-4 border-pebble"></span>
@@ -103,7 +103,7 @@
     <!-- Passions -->
     <section>
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">What I'm into</h3>
-      <p class="mt-4 max-w-2xl text-lg leading-relaxed mb-2">
+      <p class="mt-4 text-lg leading-relaxed mb-2 max-w-lg">
 			In my free time, I enjoy various activities that keep me inspired and balanced. Most often, you'll find me with my camera at hand, capturing moments.
       <span class="lg:whitespace-nowrap">Don't hesitate to browse my work: </span>
 		  </p>
@@ -218,9 +218,9 @@
     <!-- Values -->
     <section class="py-24">
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee">What I bring to a team</h3>
-      <p class="mt-4 max-w-2xl text-lg leading-relaxed">
+      <p class="mt-4 max-w-lg text-lg leading-relaxed">
 			My qualities shape how I approach challenges. Generally I want to be a valuable addition to any team,
-      <span class="lg:whitespace-nowrap">contributing positively to the work environment. </span>
+      contributing positively to the work environment.
 		  </p>
       <div class="mt-10 flex flex-wrap gap-3">
         <span class="inline-flex items-center gap-2 rounded-full bg-pebble border-2 border-coffee px-4 py-2 text-sm text-coffee">

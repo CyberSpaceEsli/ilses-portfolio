@@ -39,7 +39,7 @@
      </div>
 	</div>
 
-    <div class="relative mx-auto w-full max-w-md px-2 pt-10 pb-4 md:mx-0">
+  <div class="relative mx-auto w-full max-w-md px-2 pt-10 pb-4 md:mx-0">
   <!-- clothesline -->
   <div class="absolute left-0 right-0 top-8 border-t-2 border-dashed border-cotton/80" aria-hidden="true"></div>
  
