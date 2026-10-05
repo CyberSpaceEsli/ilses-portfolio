@@ -53,7 +53,7 @@
       <h1 class="text-5xl md:text-6xl font-lalezar font-bold mb-4">Keep the web creative.</h1>
       <p class="text-lg leading-relaxed md:mb-10 text-coffee max-w-lg">
         Thanks to my eye for visuals, I notice when something's a pixel off. What drives me is the person on the other side of the screen.
-        That's why I design interfaces with precision, so they feel and look:
+        That's why I develop & design interfaces with precision, so they feel and look:
       </p>
 
       <!--
@@ -64,7 +64,7 @@
         CHANGED: my-8 gives it guaranteed breathing room above and below.
       -->
       <div class="w-full lg:hidden">
-        <div class="relative mx-auto aspect-square h-44 w-44 max-w-full">
+        <div class="relative my-4 mx-auto aspect-square h-44 w-44 max-w-full">
           {#each badges as badge}
             <div
               class="absolute z-0 {badge.pos} {badge.mRotate} {badge.bg} {badge.text}
