@@ -38,7 +38,7 @@
 			category: "iOS App",
 			href: "https://apps.apple.com/de/app/walkdd/id6761303789",
 			description:
-				"A hiking app for Dresden and Saxon Switzerland with clear route details at a glance.",
+				"Developed as a family project, this hiking app features 20 hiking routes in Dresden and Saxon Switzerland. I led the design, creating the logo, color scheme, part of the app UI/UX, and print materials.",
 			frame: "lg:border-pale-yellow",
 			mFrame: "max-lg:border-pale-yellow",
 			hoverCircle: "fill-pebble",
@@ -57,7 +57,7 @@
 			category: "VS Code Extension",
 			href: "https://marketplace.visualstudio.com/items?itemName=CyberSpaceEsli.react-ux-analyzer",
 			description:
-				"A VS Code extension that spots usability issues in React components while you code.",
+				"Developed a VS Code extension that identifies potential usability issues in React components based on Nielsen's usability heuristics. The project aims to bridge UI/UX design and frontend development by helping developers create more user-friendly interfaces.",
 			frame: "lg:border-cheeck-blush",
 			mFrame: "max-lg:border-pale-yellow",
 			hoverCircle: "fill-cheeck-blush",
@@ -80,7 +80,7 @@
 			name: "MoodChange",
 			category: "iOS App",
 			href: "https://apps.apple.com/de/app/walkdd/id6761303789",
-			description: "An iOS app that helps you notice and shift your mood, one small step at a time.",
+			description: "Developed as a family project, this iOS app helps users recognize and shift negative emotional patterns to positive ones using the RAIN method. I designed the logo, color scheme, and overall UI/UX of the app.",
 			frame: "lg:border-pebble",
 			mFrame: "max-lg:border-pale-yellow",
 			hoverCircle: "fill-yellow-glue",
@@ -103,7 +103,7 @@
 			name: "jinx",
 			category: "Web Dashboard",
 			href: "https://jinx-team.vercel.app/",
-			description: "A web dashboard that turns complex data into a clear, easy-to-scan overview.",
+			description: "Developed in a team of five as part of a university module, this AI-powered HR tool generates and enables users to edit BPMN diagrams for processes such as hiring and onboarding. My contributions included designing the logo, color scheme, and dashboard layout.",
 			frame: "lg:border-lip-rose",
 			mFrame: "max-lg:border-pale-yellow",
 			hoverCircle: "fill-lip-rose",
@@ -164,11 +164,11 @@
 								<div class="mt-3 text-base leading-relaxed">{project.description}</div>
 								<a
 									href={project.href}
-									class="mt-6 inline-flex items-center gap-1 border-b-2 border-dashed font-lalezar text-lg text-coffee hover:text-latte/70"
+									class="mt-6 inline-flex items-center gap-1 border-b-2 border-dashed font-lalezar text-lg text-coffee hover:text-latte/80"
                   aria-label="Visit project"
 								>
 									Visit project
-									<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 17V7L16 11M10 9L8 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+									<svg class="h-6 w-6 shrink-0 translate-y-0 transition-transform duration-150 hover:-translate-y-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 17V7L16 11M10 9L8 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
 								</a>
 							</div>
 						</div>

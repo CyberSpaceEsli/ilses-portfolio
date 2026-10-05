@@ -1,9 +1,10 @@
 <script>
-  //import { scale } from 'svelte/transition';
-  // import { cubicOut } from 'svelte/easing';
+  import { page } from '$app/state';
 
   let menuOpen = $state(false);
   let navHeight = $state(0);
+  let mailClicked = $state(false);
+  let resumeClicked = $state(false);
 
   function closeMenu() {
     menuOpen = false;
@@ -13,6 +14,12 @@
     menuOpen = !menuOpen;
   }
 
+  function isActive(href) {
+    if (href === '#projects') return page.url.hash === '#projects';
+
+    return page.url.pathname === href;
+  }
+
   $effect(() => {
     if (typeof document !== 'undefined') {
       document.body.style.overflow = menuOpen ? 'hidden' : '';
@@ -20,36 +27,41 @@
   });
 </script>
 
-<svelte:window on:keydown={(e) => e.key === 'Escape' && closeMenu()} />
+<svelte:window onkeydown={(e) => e.key === 'Escape' && closeMenu()} />
 
 <!-- Navbar with dropdown, center logo and icon -->
 <div class="navbar px-8 sm:px-18 md:px-24 lg:px-46 relative z-50" bind:clientHeight={navHeight}>
   <div class="navbar-start">
-    <a href="/" on:click={closeMenu}>
+    <a href="/" onclick={closeMenu}>
       <img src="/assets/ilselöhr.svg" alt="Ilse Löhr" class="h-6 w-auto" />
     </a>
   </div>
 
   <div class="navbar-center hidden lg:flex">
     <ul class="nav-links flex items-center px-1 text-[20px]">
-      <li><a href="#projects" class="hover:text-bubble-gum px-2">projects</a></li>
+      <li><a href="/#projects" class={isActive('#projects') ? 'px-2 text-bubble-gum' : 'px-2 hover:text-bubble-gum'}>projects</a></li>
       <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
-      <li><a href="/about" class="hover:text-bubble-gum px-2">about</a></li>
+      <li><a href="/about" class={isActive('/about') ? 'px-2 text-bubble-gum' : 'px-2 hover:text-bubble-gum'}>about</a></li>
       <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
-      <li><a href="/gallery" class="hover:text-bubble-gum px-2">gallery</a></li>
+      <li><a href="/gallery" class={isActive('/gallery') ? 'px-2 text-bubble-gum' : 'px-2 hover:text-bubble-gum'}>gallery</a></li>
        <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
       <li>
         <a
           href="/resume"
           download
           title="Download CV"
-          class="group px-2 hover:text-bubble-gum"
+          onclick={() => (resumeClicked = true)}
+          class={isActive('/resume') ? 'group px-2 text-bubble-gum' : 'group px-2 hover:text-bubble-gum'}
           aria-label="Download resume as PDF"
         >  
-        <span class="inline-flex items-center hover:border-b hover:border-dashed group-hover:border-bubble-gum">
-          <span>resume</span>
+        <span class={resumeClicked || isActive('/resume')
+          ? 'inline-flex items-center border-b-2 border-dashed border-bubble-gum'
+          : 'inline-flex items-center hover:border-b-2 hover:border-dashed group-hover:border-bubble-gum'}>
+          <span class={resumeClicked || isActive('/resume') ? 'text-bubble-gum' : 'text-coffee hover:text-bubble-gum'}>resume</span>
           <svg
-            class="h-8 w-8 shrink-0 translate-y-0.5 text-coffee transition-transform duration-150 group-hover:translate-y-1 group-hover:text-bubble-gum"
+            class={resumeClicked || isActive('/resume')
+              ? 'h-8 w-8 shrink-0 translate-y-1 text-bubble-gum transition-transform duration-150'
+              : 'h-8 w-8 shrink-0 translate-y-0.5 text-coffee transition-transform duration-150 group-hover:translate-y-1 group-hover:text-bubble-gum'}
             viewBox="-2.4 -2.4 28.80 28.80"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -67,12 +79,13 @@
   <div class="navbar-end hidden lg:flex">
     <a
       href="mailto:ilse.lohr@googlemail.com?subject=Hello&body=Hi Ilse, I'd like to get in touch..."
+      onclick={() => (mailClicked = true)}
       class="group relative inline-flex h-18 w-18 items-center justify-center"
       aria-label="Mail"
     >
-      <img src="/assets/letter.svg" alt="Mail closed" class="h-18 w-18 transition-opacity duration-150 group-hover:opacity-0" />
-      <img src="/assets/letter-open.svg" alt="Mail open" class="absolute h-18 w-18 opacity-0 transition-opacity duration-150 group-hover:opacity-100" />
-      <span class="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap px-3 py-1 text-coffee bg-pebble -rotate-10 text-lg font-lalezar opacity-0 shadow-sm transition-opacity duration-150 group-hover:opacity-100">
+      <img src="/assets/letter.svg" alt="Mail closed" class="h-18 w-18 transition-opacity duration-150 {mailClicked ? 'opacity-0' : 'group-hover:opacity-0'}" />
+      <img src="/assets/letter-open.svg" alt="Mail open" class="absolute h-18 w-18 opacity-0 transition-opacity duration-150 {mailClicked ? 'opacity-100' : 'group-hover:opacity-100'}" />
+      <span class="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap px-3 py-1 text-coffee bg-pebble -rotate-10 text-lg font-lalezar opacity-0 shadow-sm transition-opacity duration-150 group-hover:opacity-100 {mailClicked ? 'opacity-100' : 'group-hover:opacity-100'}">
         Mail Me!
       </span>
     </a>
@@ -82,7 +95,7 @@
   <div class="navbar-end lg:hidden">
     <button
       type="button"
-      on:click={toggleMenu}
+      onclick={toggleMenu}
       aria-label={menuOpen ? 'Close menu' : 'Open menu'}
       aria-expanded={menuOpen}
       aria-controls="mobile-menu"
@@ -113,28 +126,31 @@
   <div class="flex flex-1 flex-col items-center justify-center">
     <nav class="w-full">
       <div class="bg-pale-brown flex flex-1 flex-col items-center justify-center py-12">
-      <a href="#projects" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Projects</a>
+      <a href="/#projects" onclick={closeMenu} class={isActive('#projects') ? 'font-lalezar text-3xl py-5 text-bubble-gum' : 'font-lalezar text-3xl py-5 text-coffee'}>Projects</a>
       <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
-      <a href="/about" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">About</a>
+      <a href="/about" onclick={closeMenu} class={isActive('/about') ? 'font-lalezar text-3xl py-5 text-bubble-gum' : 'font-lalezar text-3xl py-5 text-coffee'}>About</a>
       <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
-      <a href="/gallery" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Gallery</a>
+      <a href="/gallery" onclick={closeMenu} class={isActive('/gallery') ? 'font-lalezar text-3xl py-5 text-bubble-gum' : 'font-lalezar text-3xl py-5 text-coffee'}>Gallery</a>
       <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
 
       <a
         href="/resume"
-        on:click={closeMenu}
+        onclick={() => {
+          resumeClicked = true;
+          closeMenu();
+        }}
         download
         aria-label="Download resume as PDF"
-        class="font-lalezar text-3xl text-coffee py-5"
+        class={resumeClicked ? 'font-lalezar text-3xl py-5 text-bubble-gum' : 'font-lalezar text-3xl py-5 text-coffee'}
       >
         Resume <span class="font-lato text-xl">[PDF]</span>
       </a>
       <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
-      <a href="/impressum" on:click={closeMenu} class="font-lalezar text-3xl text-coffee py-5">Impressum</a>
+      <a href="/legal" onclick={closeMenu} class={isActive('/legal') ? 'font-lalezar text-3xl py-5 text-bubble-gum' : 'font-lalezar text-3xl py-5 text-coffee'}>Legal Notice</a>
     </div>
     </nav>
 
@@ -142,7 +158,7 @@
     <div class="flex items-center justify-center gap-10 pt-6">
       <a
         href="mailto:ilse.lohr@googlemail.com?subject=Hello&body=Hi Ilse, I'd like to get in touch..."
-        on:click={closeMenu}
+        onclick={closeMenu}
         aria-label="Mail"
         class="text-bubble-gum"
       >

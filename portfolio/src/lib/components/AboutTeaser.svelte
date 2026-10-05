@@ -4,6 +4,8 @@
     { src: '/assets/me-camera.jpg', alt: 'Sunset over the sea', caption: 'me', rotate: 'rotate-2', height: 'h-28 sm:h-32' },
     { src: '/assets/machupicc.jpg', alt: 'City tower among trees', caption: 'travel', rotate: '-rotate-5', height: 'h-24 sm:h-28' }
   ];
+
+   let aboutClicked = $state(false);
 </script>
 
 <section id="teaser" class="mx-auto min-h-content pb-24 px-8 sm:px-18 md:px-24 lg:py-20 lg:px-46">
@@ -16,17 +18,23 @@
             I find that feeling in nature, travel, and the outdoors, where I capture memories by camera and find creative inspirations.
 		</p>
 
-        <div class="mx-auto flex w-full max-w-md mt-2 md:mx-0">
+        <div class="mx-auto flex w-full max-w-md mt-6 md:mx-0">
 
            <a href="/about"
-            class="mt-4 inline-flex gap-2 items-center justify-center
-                rounded-xl bg-bubble-gum px-8 py-2
-                text-sm font-medium text-pebble hover:bg-coffee"
+            onclick={() => (aboutClicked = true)}
+            class="group relative inline-flex gap-2 items-center justify-center overflow-hidden
+                rounded-xl bg-coffee px-8 py-2
+                text-sm font-medium text-pale-yellow"
             aria-label="About"
         >
-         <span> More about me </span>
+        <span
+          aria-hidden="true"
+          class="pointer-events-none absolute left-0 top-0 h-44 w-44 -translate-y-1/2 rounded-full bg-latte opacity-0 transition-all duration-500 ease-out
+            {aboutClicked ? 'translate-x-[-5%] opacity-100' : 'translate-x-[-170%] group-hover:translate-x-[-5%] group-hover:opacity-100'}"
+        ></span>
+         <span class="relative z-10"> More about me </span>
           <!--<svg class="h-6 w-6 text-pebble" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 9H13M13.6213 4.37866L11.5 6.49998M9 5V3M6.50004 6.50001L4.37872 4.37869M5 9H3M6.50004 11.5L4.37872 13.6214M9 15V13M20 20L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>-->
-          <svg class="h-5 w-5 text-pebble" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3C12 7.97056 16.0294 12 21 12C16.0294 12 12 16.0294 12 21C12 16.0294 7.97056 12 3 12C5.6655 12 8.06036 10.8412 9.70832 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          <svg class="relative z-10 h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3C12 7.97056 16.0294 12 21 12C16.0294 12 12 16.0294 12 21C12 16.0294 7.97056 12 3 12C5.6655 12 8.06036 10.8412 9.70832 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
         </a>
      </div>
 	</div>

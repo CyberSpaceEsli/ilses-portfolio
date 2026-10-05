@@ -1,3 +1,13 @@
+<script>
+  import { page } from '$app/state';
+
+  function isActive(href) {
+    if (href === '/#projects') return page.url.pathname === '/' && page.url.hash === '#projects';
+
+    return page.url.pathname === href;
+  }
+</script>
+
 <footer class="footer bg-neutral text-pale-yellow py-10 px-8 sm:px-18 md:px-24 lg:px-46">
   <div class="mx-auto flex w-full max-w-md flex-col items-center gap-8 text-center lg:max-w-none lg:flex-row lg:items-center lg:justify-between lg:gap-6 lg:text-left">
 
@@ -6,9 +16,9 @@
       <img
         src="/assets/hang-loose-circle.svg"
         alt="hang loose icon in circle"
-        class="hang-loose-icon order-1 h-18 w-18 lg:order-none"
+        class="hang-loose-icon order-1 h-18 w-18 lg:order-0"
       />
-      <p class="order-4 mx-auto max-w-xs lg:order-none lg:mx-0">
+      <p class="order-4 mx-auto max-w-xs lg:order-0 lg:mx-0">
         Hang tight or hang loose, either way the vibe is right.
         <br />
         © Ilse Löhr, 2026. All rights reserved.
@@ -16,18 +26,18 @@
     </aside>
 
     <!-- Nav: vertical list on mobile, horizontal row on desktop -->
-    <nav class="order-2 w-full max-lg:max-w-xs max-lg:border-t max-lg:border-dashed max-lg:border-pale-yellow/25 max-lg:pt-8 font-lalezar text-xl lg:order-none lg:w-auto lg:border-0 lg:pt-0">
+    <nav class="order-2 w-full max-lg:max-w-xs max-lg:border-t max-lg:border-dashed max-lg:border-pale-yellow/25 max-lg:pt-8 font-lalezar text-xl lg:order-0 lg:w-auto lg:border-0 lg:pt-0">
       <div class="flex w-full flex-col items-center gap-4 text-md md:gap-6 lg:w-auto lg:flex-row">
-        <a href="#projects" class="text-center hover:text-bubble-gum">Projects</a>
-        <a href="/about" class="text-center hover:text-bubble-gum">About</a>
-        <a href="/gallery" class="text-center hover:text-bubble-gum">Gallery</a>
-        <a href="/resume" class="text-center hover:text-bubble-gum">Resume</a>
-        <a href="/impressum" class="text-center hover:text-bubble-gum">Impressum</a>
+        <a href="/#projects" class={isActive('/#projects') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Projects</a>
+        <a href="/about" class={isActive('/about') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>About</a>
+        <a href="/gallery" class={isActive('/gallery') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Gallery</a>
+        <a href="/resume" class={isActive('/resume') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Resume</a>
+        <a href="/legal" class={isActive('/legal') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Legal Notice</a>
       </div>
     </nav>
 
     <!-- Socials -->
-    <div class="order-3 flex w-full flex-row items-center justify-center gap-5 max-lg:max-w-xs max-lg:border-t max-lg:border-dashed max-lg:border-pale-yellow/25 max-lg:pt-8 lg:order-none lg:w-auto lg:flex-col lg:items-end lg:gap-3 lg:border-0 lg:pt-0">
+    <div class="order-3 flex w-full flex-row items-center justify-center gap-5 max-lg:max-w-xs max-lg:border-t max-lg:border-dashed max-lg:border-pale-yellow/25 max-lg:pt-8 lg:order-0 lg:w-auto lg:flex-col lg:items-end lg:gap-3 lg:border-0 lg:pt-0">
       <a href="https://www.linkedin.com/in/ilse-l%C3%B6hr-687b681b8" aria-label="LinkedIn" class="inline-flex h-7 w-7 items-center justify-center transition-transform hover:-translate-y-0.5">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-38.2 -38.2 458.40 458.40" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-38.2" y="-38.2" width="458.40" height="458.40" rx="229.2" fill="#FF6388" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#F7EBC3;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
       </a>

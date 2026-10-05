@@ -35,6 +35,7 @@
 	];
 
 	let hangEl;
+    let aboutClicked = $state(false);
 
 	onMount(() => {
 		if (!hangEl) return;
@@ -110,14 +111,20 @@
       <div class="mx-auto flex w-full max-w-md justify-center border-t border-dashed border-latte/25 lg:hidden">
 
            <a href="mailto:ilse.lohr@googlemail.com?subject=Hello&body=Hi Ilse, I'd like to get in touch..."
-            class="mt-4 inline-flex items-center gap-2
-                rounded-xl bg-bubble-gum px-12 py-2
-                text-sm font-medium text-pebble"
+            onclick={() => (aboutClicked = true)}
+            class="group relative mt-4 inline-flex items-center gap-2 overflow-hidden
+                rounded-xl bg-coffee px-12 py-2
+                text-sm font-medium text-pale-yellow"
             aria-label="Mail"
-        >
+        >  
+            <span
+            aria-hidden="true"
+            class="pointer-events-none absolute left-0 top-0 h-40 w-40 -translate-y-1/2 rounded-full bg-latte opacity-0 transition-all duration-500 ease-out
+                {aboutClicked ? 'translate-x-[-5%] opacity-100' : 'translate-x-[-170%] group-hover:translate-x-[-20%] group-hover:opacity-100'}"
+            ></span>
             <!--<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="h-5 w-5 text-pebble" aria-hidden="true"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.29289 5.29289C3.47386 5.11193 3.72386 5 4 5H20C20.2761 5 20.5261 5.11193 20.7071 5.29289M3.29289 5.29289C3.11193 5.47386 3 5.72386 3 6V18C3 18.5523 3.44772 19 4 19H14M3.29289 5.29289L5 7.00006M20.7071 5.29289C20.8881 5.47386 21 5.72386 21 6V18C21 18.5523 20.5523 19 20 19H18M20.7071 5.29289L13.4142 12.5857C12.6331 13.3668 11.3668 13.3668 10.5857 12.5857L8 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>-->
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.29289 5.29289C3.47386 5.11193 3.72386 5 4 5H20C20.2761 5 20.5261 5.11193 20.7071 5.29289M3.29289 5.29289C3.11193 5.47386 3 5.72386 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.72386 20.8881 5.47386 20.7071 5.29289M3.29289 5.29289L10.5858 12.5857C11.3668 13.3668 12.6332 13.3668 13.4142 12.5857L20.7071 5.29289" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            <span class="whitespace-nowrap">Mail me</span>
+            <svg class="relative z-10 h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.29289 5.29289C3.47386 5.11193 3.72386 5 4 5H20C20.2761 5 20.5261 5.11193 20.7071 5.29289M3.29289 5.29289C3.11193 5.47386 3 5.72386 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.72386 20.8881 5.47386 20.7071 5.29289M3.29289 5.29289L10.5858 12.5857C11.3668 13.3668 12.6332 13.3668 13.4142 12.5857L20.7071 5.29289" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            <span class="relative z-10 whitespace-nowrap">Mail me</span>
         </a>
      </div>
     </div>
