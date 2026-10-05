@@ -2,7 +2,7 @@
   const photos = [
     { src: '/assets/dresden.jpg', alt: 'Selfie in the car', caption: 'dresden', rotate: '-rotate-3', height: 'h-32 sm:h-36' },
     { src: '/assets/me-camera.jpg', alt: 'Sunset over the sea', caption: 'me', rotate: 'rotate-2', height: 'h-28 sm:h-32' },
-    { src: '/assets/machupicc.jpg', alt: 'City tower among trees', caption: 'travel', rotate: '-rotate-5', height: 'h-24 sm:h-28' }
+    { src: '/assets/palm.jpg', alt: 'City tower among trees', caption: 'travel', rotate: '-rotate-5', height: 'h-24 sm:h-28' }
   ];
 
    let aboutClicked = $state(false);

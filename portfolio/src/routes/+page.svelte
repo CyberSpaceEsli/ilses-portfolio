@@ -31,10 +31,10 @@
 
 <svelte:head>
 	<title>Portfolio | Ilse Löhr</title>
-	<meta
-		name="description"
-		content="Hang out with Ilse Löhr and keep the web creative. View her projects and get in touch."
-	/>
+  <meta
+    name="description"
+    content="Portfolio of Ilse Löhr, a web and UX/UI enthusiast with a passion for unique, intutive, and inclusive design."
+  />
 </svelte:head>
 
 <Nav />
@@ -46,7 +46,7 @@
   onclick={scrollToTop}
   aria-label="Back to top"
   title="Back to top"
-  class={`group fixed bottom-6 right-6 z-40 flex h-10 w-10 items-center justify-center rounded-full bg-coffee text-pale-yellow shadow-lg transition-all duration-500 ease-out sm:bottom-10 sm:right-10 ${
+  class={`group fixed bottom-6 right-6 z-40 flex h-10 w-10 items-center justify-center rounded-full bg-neutral text-pale-yellow shadow-lg transition-all duration-500 ease-out sm:bottom-10 sm:right-10 ${
     showFloatingTop ? 'pointer-events-auto opacity-100 translate-y-0 scale-100' : 'pointer-events-none opacity-0 translate-y-4 scale-90'
   }`}
 >
