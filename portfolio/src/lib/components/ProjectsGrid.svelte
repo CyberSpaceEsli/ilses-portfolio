@@ -1,7 +1,7 @@
 <script>
 	// Default artwork positions (used unless a project overrides them with `pos`)
 	const positions = [
-		"left-8 top-2 w-[45%] -rotate-6",
+		"left-8 top-2 w-[45%] -rotate-6 2xl:w-[38%]",
 		"bottom-8 right-4 h-[90%] w-[40%] rotate-3 object-cover"
 	];
 
@@ -57,7 +57,7 @@
 			category: "VS Code Extension",
 			href: "https://marketplace.visualstudio.com/items?itemName=CyberSpaceEsli.react-ux-analyzer",
 			description:
-				"Developed a VS Code extension that identifies potential usability issues in React components based on Nielsen's usability heuristics. The project aims to bridge UI/UX design and frontend development by helping developers create more user-friendly interfaces.",
+				"Developed a VS Code extension that identifies potential usability issues in React components based on Nielsen's usability heuristics. The project aims to bridge UI/UX design and frontend development by helping developers create more user-friendly interfaces. It addresses UX issues at root level, and minimizes iterative design cycles.",
 			frame: "lg:border-cheeck-blush",
 			mFrame: "max-lg:border-pale-yellow",
 			hoverCircle: "fill-cheeck-blush",
@@ -65,7 +65,7 @@
 				{
 					src: "/assets/react-ux-analyzer.png",
 					alt: "React UX Analyzer sample project",
-					pos: "left-8 top-4 w-[65%] rotate-4",
+					pos: "left-8 top-4 w-[65%] rotate-4 2xl:w-[52%]",
 					m: "max-lg:left-0 max-lg:top-[4%] max-lg:w-[88%] max-lg:rotate-2"
 				},
 				{
@@ -88,7 +88,7 @@
 				{
 					src: "/assets/moodchange-logo.png",
 					alt: "MoodChange app icon",
-					pos: "left-14 top-2 w-[30%] -rotate-3",
+					pos: "left-14 top-2 w-[30%] -rotate-3 2xl:w-[24%]",
 					m: "max-lg:left-0 max-lg:top-[38%] max-lg:w-[54%] max-lg:-rotate-6"
 				},
 				{
@@ -111,7 +111,7 @@
 				{
 					src: "/assets/jinx-dashboard.png",
 					alt: "jinx dashboard",
-					pos: "top-1 right-10 w-[52%] -rotate-6",
+					pos: "top-1 right-10 w-[52%] -rotate-6 2xl:w-[42%]",
 					m: "max-lg:right-0 max-lg:top-0 max-lg:w-[80%] max-lg:-rotate-3"
 				},
 				{
@@ -131,8 +131,9 @@
 			Projects I've had a hand in shaping
 		</h3>
 		<p class="mt-4 max-w-2xl text-lg leading-relaxed">
-			My goal is to give digital products visibility and shape their easy feel of use	
-      <span class="lg:whitespace-nowrap">from first impression to everyday interaction. </span>
+			With design, I give digital products visibility and care for details that make everyday interactions feel seamless. 
+      With development, I can bring those designs to life, ready to be used by people. 
+      Have a look at some of my work below.
 		</p>
 	</div>
 

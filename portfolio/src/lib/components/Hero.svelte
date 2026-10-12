@@ -51,12 +51,17 @@
     <div class="flex-1 flex flex-col items-center text-center lg:items-start lg:text-left justify-center">
       <span class="p-1 text-bubble-gum">Hang out with me &</span>
       <h1 class="text-5xl md:text-6xl font-lalezar font-bold mb-4">Keep the web creative.</h1>
-      <p class="text-lg leading-relaxed md:mb-10 text-coffee max-w-lg">
-        Thanks to my eye for visuals, I notice when something's a pixel off. What drives me is the person on the other side of the screen.
-        That's why I develop & design interfaces with precision, so they feel and look:
+      <p class="text-lg leading-relaxed md:mb-10 text-coffee max-w-lg">      
+        In an era of AI-built products, standing out takes more effort than ever. 
+        Understanding users' needs, building trust and personalizing experiences is crucial. 
+        Now, focusing on pixel-level details is what makes the difference for brand growth, 
+        that's why I want to design & build interfaces that feel: 
       </p>
 
       <!--
+        What drives me is the person on the other side of the screen.
+        That's why I develop & design interfaces with precision, so they feel and look:
+
         Mobile badge cluster, own contained box.
         CHANGED: explicit h-64/w-64 instead of relying on aspect-square alone
         (absolutely-positioned children don't force a height, so the box was
@@ -80,7 +85,7 @@
           <img
             src="/assets/hang-loose-circle.svg"
             alt="hang loose icon in circle"
-            class="hang-loose-icon absolute left-1/2 top-1/2 z-10 h-12 w-12 -translate-x-1/2 -translate-y-1/2"
+            class="hang-loose-icon absolute left-1/2 top-1/2 z-10 h-12 w-12 -translate-x-1/2 -translate-y-1/2 shrink-0"
           />
         </div>
       </div>

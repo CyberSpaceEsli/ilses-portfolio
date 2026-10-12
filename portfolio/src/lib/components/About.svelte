@@ -59,7 +59,7 @@
     <!-- Intro -->
     <div class="md:px-10">
     <section class="flex flex-col lg:flex-row items-center justify-between">
-      <div class="mb-10 md:mb-0 md:w-1/2 md:px-10">
+      <div class="mb-10 md:mb-0 md:w-1/2 md:px-10 2xl:flex 2xl:justify-center">
        <!--<div class="relative h-32 w-32 shrink-0 md:h-64 md:w-64 lg:h-85 lg:w-85">
         <span class="absolute left-2 top-2 h-16 w-16 rounded-full bg-latte border-4 border-pebble"></span>
         <span class="absolute -right-3 bottom-16 h-14 w-14 rounded-full bg-yellow-glue border-4 border-pebble"></span>
@@ -92,8 +92,8 @@
         <h1 class="text-5xl md:text-6xl font-lalezar font-bold mb-4">Hi, I'm Ilse.</h1>
         <p class="text-lg mb-4 leading-relaxed md:mb-2 text-coffee md:max-w-xl lg:max-w-xl">
           Born in the Netherlands, but based in Dresden, Germany (open to relocation), I’m fluent in German, Dutch, and English. 
-          With a Master’s in Web Engineering, I bring a passion for creating intuitive, unique, and inclusive digital experiences, backed by a strong eye for detail. 
-          I'm now looking for a position where I can help take your digital products to the next level.
+          With a Master’s in Web Engineering, I bring a passion for creating user-centered digital experiences that are intuitive, unique, and inclusive.
+          I'm now looking for a position where I can use the latest trends (e.g., AI as creative teammate) to drive business value and help take digital products to the next level.
         </p>
        
       </div>
@@ -150,7 +150,7 @@
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">Work experience</h3>
       <div class="mt-10 flex flex-col divide-y divide-dashed divide-latte/40">
         <div class="flex items-start gap-5 py-6">
-          <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-4 border-pebble bg-coffee font-lalezar text-sm text-pebble">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
             <!-- swap for: <img src="/assets/logos/fraunhofer.svg" alt="Fraunhofer IWU logo" class="h-8 w-8 object-contain" /> -->
             FH
           </div>
@@ -164,7 +164,7 @@
           </div>
         </div>
         <div class="flex items-start gap-5 py-6">
-          <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-4 border-pebble bg-coffee font-lalezar text-sm text-pebble">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
             <!-- swap for: <img src="/assets/logos/ostec.svg" alt="ostec GmbH logo" class="h-8 w-8 object-contain" /> -->
             OS
           </div>
@@ -185,7 +185,7 @@
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">Education</h3>
       <div class="mt-10 flex flex-col divide-y divide-dashed divide-latte/40">
         <div class="flex items-start gap-5 py-6">
-          <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-4 border-pebble bg-coffee font-lalezar text-sm text-pebble">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
             <!-- swap for: <img src="/assets/logos/tu-chemnitz.svg" alt="Chemnitz University of Technology logo" class="h-8 w-8 object-contain" /> -->
             TU
           </div>
@@ -199,7 +199,7 @@
           </div>
         </div>
         <div class="flex items-start gap-5 py-6">
-          <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-4 border-pebble bg-coffee font-lalezar text-sm text-pebble">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
             <!-- swap for: <img src="/assets/logos/dhsn.svg" alt="Dual University Saxony logo" class="h-8 w-8 object-contain" /> -->
             DH
           </div>
@@ -219,8 +219,7 @@
     <section class="py-24">
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee">What I bring to a team</h3>
       <p class="mt-4 max-w-lg text-lg leading-relaxed">
-			My qualities shape how I approach challenges. Generally I want to be a valuable addition to any team,
-      contributing positively to the work environment.
+			Before starting my work, I challenge myself asking questions that matter, in order to get to the real problem. Furthermore, I strive to be a valuable addition and ensure chemistry within the team. The following qualities make me a valuable asset:
 		  </p>
       <div class="mt-10 flex flex-wrap gap-3">
         <span class="inline-flex items-center gap-2 rounded-full bg-pebble border-2 border-coffee px-4 py-2 text-sm text-coffee">

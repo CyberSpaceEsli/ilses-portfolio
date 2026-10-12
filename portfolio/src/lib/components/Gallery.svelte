@@ -14,8 +14,9 @@
         Photo Gallery
       </h1>
       <p class="text-lg leading-relaxed md:mb-10 text-coffee max-w-lg">
-        Take your time and enjoy browsing through my collection of moments captured in photographs. My current gear is a Fujifilm XT-5 with a 16-50mm lens. If you're interested in a photo shoot for any occasion, please get in touch by email.
+        Take your time and enjoy browsing through my collection of moments captured in photographs. My current gear is a Fujifilm XT-5 with a 16-50mm lens.
       </p>
+      <!--<p>If you're interested in a photo shoot for any occasion, please get in touch by email.</p>-->
     </header>
   </div>
 
@@ -35,7 +36,7 @@
                 <circle cx="14" cy="12" r="2" class="fill-cotton" />
                 </svg>
         
-                <div class="rounded-lg bg-pebble p-1.5 shadow-md transition-transform hover:scale-105">
+                <div class="rounded-lg bg-pebble p-1.5 shadow-md transition-transform hover:scale-101">
                 <img
                     src={photo.src}
                     alt={photo.alt}

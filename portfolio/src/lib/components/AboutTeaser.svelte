@@ -14,7 +14,7 @@
 			Behind the pixels
 		</h3>
 		<p class="mt-4 max-w-2xl text-lg leading-relaxed">
-			Born as a dutch girl, raised for a while in New Zealand, and growing up in East Germany near Dresden, I've never had one place to call home. 
+			Born as a dutch girl, raised for a while in New Zealand, and growing up in Germany near Dresden, I've never had one place to call home. 
             I find that feeling in nature, travel, and the outdoors, where I capture memories by camera and find creative inspirations.
 		</p>
 
