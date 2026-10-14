@@ -33,7 +33,8 @@
         <a href="/#projects" class={isActive('/#projects') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Projects</a>
         <a href="/about" class={isActive('/about') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>About</a>
         <a href="/gallery" class={isActive('/gallery') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Gallery</a>
-        <a href="/resume" class={isActive('/resume') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Resume</a>
+        <a href="/cv-ilselöhr.pdf"
+        download="cv-ilselöhr.pdf" class={isActive('/resume') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Resume</a>
         <a href="/legal" class={isActive('/legal') ? 'text-center text-bubble-gum' : 'text-center hover:text-bubble-gum'}>Legal Notice</a>
       </div>
     </nav>
