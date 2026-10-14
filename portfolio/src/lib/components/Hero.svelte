@@ -3,7 +3,7 @@
 
 	const badges = [
     {
-      label: 'unique',
+      label: 'distinctive',
       bg: 'bg-pebble',
       text: 'text-coffee',
       rotate: 'rotate-4',
@@ -106,7 +106,7 @@
             </svg>
 
             <!-- badge -->
-            <div class="mt-5 {badge.bg} {badge.text} rounded-lg px-5 py-2.5 text-sm shadow-md font-lalezar">
+            <div class="mt-5 {badge.bg} {badge.text} rounded-lg px-5 py-2.5 text-sm shadow-md font-lalezar transition-transform duration-300 hover:scale-105">
               {badge.label}
             </div>
           </div>

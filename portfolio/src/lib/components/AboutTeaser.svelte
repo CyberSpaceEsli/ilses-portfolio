@@ -8,17 +8,18 @@
    let aboutClicked = $state(false);
 </script>
 
-<section id="teaser" class="mx-auto min-h-content pb-24 px-8 sm:px-18 md:px-24 lg:py-20 lg:px-46">
-    <div class="mb-12">
-		<h3 class="text-5xl font-lalezar tracking-tight">
-			Behind the pixels
-		</h3>
-		<p class="mt-4 max-w-2xl text-lg leading-relaxed">
-			Born as a dutch girl, raised for a while in New Zealand, and growing up in Germany near Dresden, I've never had one place to call home. 
-            I find that feeling in nature, travel, and the outdoors, where I capture memories by camera and find creative inspirations.
-		</p>
+<section id="teaser" class="mx-auto min-h-content pb-24 px-8 sm:px-18 md:px-24 lg:py-20 lg:px-46 2xl:pb-24">
+    <div class="grid w-full grid-cols-1 gap-10 md:gap-12 lg:gap-16"> 
+    <div>
+      <h3 class="text-5xl font-lalezar tracking-tight">
+        Behind the pixels
+      </h3>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed">
+        Born in the Netherlands, raised for a while in New Zealand, and growing up in Germany near Dresden, I've never had one place to call home. 
+        I find that feeling in nature, travel, and the outdoors, where I capture memories by camera and find creative inspiration.
+      </p>
 
-        <div class="mx-auto flex w-full max-w-md mt-6 md:mx-0">
+       <div class="mx-auto flex w-full max-w-md mt-6 md:mx-0 lg:mt-10">
 
            <a href="/about"
             onclick={() => (aboutClicked = true)}
@@ -36,8 +37,9 @@
           <!--<svg class="h-6 w-6 text-pebble" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 9H13M13.6213 4.37866L11.5 6.49998M9 5V3M6.50004 6.50001L4.37872 4.37869M5 9H3M6.50004 11.5L4.37872 13.6214M9 15V13M20 20L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>-->
           <svg class="relative z-10 h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3C12 7.97056 16.0294 12 21 12C16.0294 12 12 16.0294 12 21C12 16.0294 7.97056 12 3 12C5.6655 12 8.06036 10.8412 9.70832 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
         </a>
-     </div>
-	</div>
+    </div>
+    </div>
+
 
   <div class="relative mx-auto w-full max-w-md px-2 pt-10 pb-4 md:mx-0">
   <!-- clothesline -->
@@ -69,5 +71,7 @@
          {/each}
         </div>
     </div>
+
+  </div>
 
 </section>

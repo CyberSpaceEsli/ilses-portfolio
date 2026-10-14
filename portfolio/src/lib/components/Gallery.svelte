@@ -10,10 +10,10 @@
 <main class="min-h-content py-24 px-8 sm:px-18 md:px-24 lg:px-46">
   <div class="mx-auto flex w-full justify-center mb-12 md:mb-8">
     <header class="text-center">
-      <h1 class="font-lalezar text-5xl md:text-6xl tracking-tight text-coffee">
+      <h1 class="mb-4 font-lalezar text-5xl md:text-6xl tracking-tight text-coffee">
         Photo Gallery
       </h1>
-      <p class="text-lg leading-relaxed md:mb-10 text-coffee max-w-lg">
+      <p class="mb-4 text-lg leading-relaxed md:mb-10 text-coffee max-w-lg">
         Take your time and enjoy browsing through my collection of moments captured in photographs. My current gear is a Fujifilm XT-5 with a 16-50mm lens.
       </p>
       <!--<p>If you're interested in a photo shoot for any occasion, please get in touch by email.</p>-->

@@ -13,20 +13,20 @@
 	// The two small tiles next to each big card. Alternates automatically.
 	const tileSets = [
 		[
-			{ bg: "bg-yellow-glue/60", emoji: "🤘🏼" },
+			{ bg: "bg-cream-brown", emoji: "🤘🏼" },
 			{ bg: "card-yellow-bubbles-pattern" }
 		],
 		[
-			{ bg: "bg-pale-pink", emoji: "👌🏼" },
+			{ bg: "bg-cream-brown", emoji: "👌🏼" },
 			{ bg: "card-hideout-pattern" }
 		],
 		[
-			{ bg: "bg-yellow-glue", emoji: "✌🏼" },
+			{ bg: "bg-cream-brown", emoji: "✌🏼" },
 			{ bg: "card-wiggle-pattern" }
 		],
 		[
-			{ bg: "bg-lip-rose", emoji: "🖐🏼" },
-			{ bg: "card-point-stars-light-pattern" }
+			{ bg: "bg-cream-brown", emoji: "🖐🏼" },
+			{ bg: "card-point-stars-pattern" }
 		]
 	];
 
@@ -38,7 +38,7 @@
 			category: "iOS App",
 			href: "https://apps.apple.com/de/app/walkdd/id6761303789",
 			description:
-				"Developed as a family project, this hiking app features 20 hiking routes in Dresden and Saxon Switzerland. I led the design, creating the logo, color scheme, part of the app UI/UX, and print materials.",
+				"Finding hiking routes in Dresden and Saxon Switzerland isn't always easy. WalkDD is an iOS app that provides 20 hiking routes with local information and POIs. Developed as a family project, I led the design of the logo, color scheme, part of UI/UX elements, and print materials.",
 			frame: "lg:border-pale-yellow",
 			mFrame: "max-lg:border-pale-yellow",
 			hoverCircle: "fill-pebble",
@@ -57,10 +57,10 @@
 			category: "VS Code Extension",
 			href: "https://marketplace.visualstudio.com/items?itemName=CyberSpaceEsli.react-ux-analyzer",
 			description:
-				"Developed a VS Code extension that identifies potential usability issues in React components based on Nielsen's usability heuristics. The project aims to bridge UI/UX design and frontend development by helping developers create more user-friendly interfaces. It addresses UX issues at root level, and minimizes iterative design cycles.",
+		    "Usability issues are often introduced during coding and surface late in the process, which leads to repeated design cycles. React UX Analyzer is a VS Code extension I built that flags usability issues in React commponents, based on Nielsen's usability heuristics. By addressing UX problems at the root, it bridges design and development, reducing iterative design cycles and helping developers create more user-friendly interfaces.",
 			frame: "lg:border-cheeck-blush",
 			mFrame: "max-lg:border-pale-yellow",
-			hoverCircle: "fill-cheeck-blush",
+			hoverCircle: "fill-pale-pink",
 			images: [
 				{
 					src: "/assets/react-ux-analyzer.png",
@@ -80,10 +80,10 @@
 			name: "MoodChange",
 			category: "iOS App",
 			href: "https://apps.apple.com/de/app/walkdd/id6761303789",
-			description: "Developed as a family project, this iOS app helps users recognize and shift negative emotional patterns to positive ones using the RAIN method. I designed the logo, color scheme, and overall UI/UX of the app.",
-			frame: "lg:border-pebble",
+			description: "Negative emotional patterns can be difficult to notice, let alone change. Moodchange is aniOS app, developed also as family project. It helps users recognize and shift negative emotional patterns to positive ones using the RAIN method. I designed the logo, color scheme, and UX flow of the app.",
+			frame: "lg:border-pale-yellow",
 			mFrame: "max-lg:border-pale-yellow",
-			hoverCircle: "fill-yellow-glue",
+			hoverCircle: "fill-pebble",
 			images: [
 				{
 					src: "/assets/moodchange-logo.png",
@@ -103,10 +103,10 @@
 			name: "jinx",
 			category: "Web Dashboard",
 			href: "https://jinx-team.vercel.app/",
-			description: "Developed in a team of five as part of a university module, this AI-powered HR tool generates and enables users to edit BPMN diagrams for processes such as hiring and onboarding. My contributions included designing the logo, color scheme, and dashboard layout.",
-			frame: "lg:border-lip-rose",
+			description: "Mapping HR processes like onboarding and hiring by hand can be slow and tedious. For a university module, we built jinx with a team of five as an AI-powered solution to automate this process using BPMN. I contributed to the brand identity (logo, colors), the UI design of dashboards, the user flows, and some development tasks.",
+			frame: "lg:border-cheeck-blush",
 			mFrame: "max-lg:border-pale-yellow",
-			hoverCircle: "fill-lip-rose",
+			hoverCircle: "fill-pale-pink",
 			images: [
 				{
 					src: "/assets/jinx-dashboard.png",
@@ -159,7 +159,7 @@
 
 							<div class="project-hover-copy pointer-events-auto absolute left-1/2 top-1/2 z-40 w-[60%] -translate-x-1/2 -translate-y-1/2 text-left text-coffee">
 								<div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-									<div class="font-lalezar text-2xl leading-tight">{project.name}</div>
+									<div class="font-lalezar text-2xl leading-tigh ">{project.name}</div>
 									<div class="text-md text-coffee/70">{project.category}</div>
 								</div>
 								<div class="mt-3 text-base leading-relaxed">{project.description}</div>
@@ -194,12 +194,20 @@
 						<!-- CHANGED: caption + description (description only below lg) -->
 						<div class="flex flex-col gap-3">
 							<div class="flex flex-wrap items-baseline gap-x-2 text-xl">
-								<span class="font-lalezar font-medium">{project.name}</span>
-								<span class="text-base-content/50 text-[16px]">{project.category}</span>
+								<span class="font-lalezar font-medium 2xl:hidden">{project.name}</span>
+								<span class="text-base-content/50 text-[16px] 2xl:hidden">{project.category}</span>
 							</div>
 							<p class="text-base leading-relaxed text-coffee/70 lg:hidden">
 								{project.description}
 							</p>
+              <a
+									href={project.href}
+									class="lg:hidden mt-6 inline-flex items-center gap-1 border-b-2 border-dashed font-lalezar text-lg text-coffee hover:text-latte/80"
+                  aria-label="Visit project"
+								>
+									Visit project
+									<svg class="h-6 w-6 shrink-0 translate-y-0 transition-transform duration-150 hover:-translate-y-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 17V7L16 11M10 9L8 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+								</a>
 						</div>
 
 					</div>

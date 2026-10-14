@@ -1,4 +1,6 @@
 <script>
+  import References from "./References.svelte";
+
 
    let galleryClicked = $state(false);
    let aboutClicked = $state(false);
@@ -92,8 +94,8 @@
         <h1 class="text-5xl md:text-6xl font-lalezar font-bold mb-4">Hi, I'm Ilse.</h1>
         <p class="text-lg mb-4 leading-relaxed md:mb-2 text-coffee md:max-w-xl lg:max-w-xl">
           Born in the Netherlands, but based in Dresden, Germany (open to relocation), I’m fluent in German, Dutch, and English. 
-          With a Master’s in Web Engineering, I bring a passion for creating user-centered digital experiences that are intuitive, unique, and inclusive.
-          I'm now looking for a position where I can use the latest trends (e.g., AI as creative teammate) to drive business value and help take digital products to the next level.
+          With a Master’s in Web Engineering, I bring a passion for creating user-centered digital experiences that are distinctive, intuitive and inclusive.
+          I'm now looking for a position where I can adapt to the latest trends and thrive at the intersection of design, technology & product.
         </p>
        
       </div>
@@ -134,7 +136,7 @@
               <circle cx="14" cy="12" r="2" class="fill-cotton" />
             </svg>
     
-            <div class="{p.rotate} rounded-xl {p.bg} px-6 py-5 shadow-md">
+            <div class="{p.rotate} rounded-xl {p.bg} px-6 py-5 shadow-md transition-transform duration-300 hover:scale-105">
               <div class="flex items-center justify-center gap-3">
                 <h3 class="font-lalezar text-lg text-coffee">{p.title}</h3>
               </div>
@@ -147,7 +149,7 @@
 
     <!-- Work experience -->
     <section>
-      <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">Work experience</h3>
+      <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">Where I've worked</h3>
       <div class="mt-10 flex flex-col divide-y divide-dashed divide-latte/40">
         <div class="flex items-start gap-5 py-6">
           <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
@@ -158,9 +160,9 @@
             <div>
               <h3 class="font-medium text-coffee">Student Research Assistant</h3>
               <p class="text-sm text-coffee/60">Fraunhofer IWU</p>
-              <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Built a pipeline that checks software vulnerabilities by integrating vulnerability detection tools, applied to a real software project.</p>
+              <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Automated checks for software vulnerabilities by integrating vulnerability detection tools, applied to a real software project.</p>
             </div>
-            <span class="mt-4 md:mt-0 shrink-0 text-sm text-coffee/60">April 2023 – Dez. 2025</span>
+            <span class="mt-4 md:mt-0 shrink-0 text-sm text-coffee/60">April 2023 – Dec. 2025</span>
           </div>
         </div>
         <div class="flex items-start gap-5 py-6">
@@ -174,7 +176,7 @@
               <p class="text-sm text-coffee/60">ostec GmbH</p>
               <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Maintained, optimized, and developed the company websites within a Holacracy-run organization.</p>
             </div>
-            <span class="mt-4 md:mt-0 shrink-0 text-sm text-coffee/60">Sept. 2020 – Aug. 2023</span>
+            <span class="mt-4 md:mt-0 shrink-0 text-sm text-coffee/60">Oct. 2020 – Sept. 2023</span>
           </div>
         </div>
       </div>
@@ -182,7 +184,7 @@
 
     <!-- Education -->
     <section>
-      <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">Education</h3>
+      <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">What I've studied</h3>
       <div class="mt-10 flex flex-col divide-y divide-dashed divide-latte/40">
         <div class="flex items-start gap-5 py-6">
           <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
@@ -209,14 +211,14 @@
               <p class="text-sm text-coffee/60">Dual University Saxony, Dresden</p>
               <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Learned the foundations of computer science and digital media processing. <span class="block text-coffee">Final grade: 1.7</span></p>
             </div>
-            <span class="mt-4 md:mt-0 shrink-0 text-sm text-coffee/60">Sept. 2020 – Aug. 2023</span>
+            <span class="mt-4 md:mt-0 shrink-0 text-sm text-coffee/60">Oct. 2020 – Sept. 2023</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Values -->
-    <section class="py-24">
+    <!-- Strengths -->
+    <section class="pt-24">
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee">What I bring to a team</h3>
       <p class="mt-4 max-w-lg text-lg leading-relaxed">
 			Before starting my work, I challenge myself asking questions that matter, in order to get to the real problem. Furthermore, I strive to be a valuable addition and ensure chemistry within the team. The following qualities make me a valuable asset:
@@ -244,6 +246,9 @@
         </span>
       </div>
     </section>
+
+     <!-- References -->
+    <References />
 
   </div>
 </main>

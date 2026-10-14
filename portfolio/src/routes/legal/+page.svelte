@@ -13,7 +13,7 @@
 
 <Nav />
 
-	<main class="min-h-content py-24 px-8 sm:px-18 md:px-24 lg:px-46">
+	<main class="min-h-content py-24 2xl:pb-28 px-8 sm:px-18 md:px-24 lg:px-46">
   <div class="mx-auto flex w-full max-w-3xl flex-col gap-12">
     <header class="text-center lg:text-left">
       <h1 class="font-lalezar text-6xl leading-none tracking-tight text-coffee sm:text-7xl">
@@ -30,7 +30,7 @@
         <div class="mt-4 space-y-3 text-base leading-relaxed text-coffee/85">
           <p>
             <strong class="block text-coffee">Ilse Löhr</strong>
-            Web &amp; UX / UI enthusiast
+            <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum">Web & UX / UI enthusiast</span>
           </p>
           <p>
             Email:

@@ -13,11 +13,13 @@
 
     <!-- Logo + text: split apart on mobile via `contents`, regrouped on desktop -->
     <aside class="contents lg:flex lg:flex-col lg:items-start lg:gap-3">
-      <img
-        src="/assets/hang-loose-circle.svg"
-        alt="hang loose icon in circle"
-        class="hang-loose-icon order-1 h-18 w-18 lg:order-0"
-      />
+      <a href="/" class="flex items-center gap-3">
+        <img
+          src="/assets/hang-loose-circle.svg"
+          alt="hang loose icon in circle"
+          class="hang-loose-icon order-1 h-18 w-18 lg:order-0"
+        />
+      </a>
       <p class="order-4 mx-auto max-w-xs lg:order-0 lg:mx-0">
         Hang tight or hang loose, either way the vibe is right.
         <br />

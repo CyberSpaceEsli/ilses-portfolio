@@ -144,7 +144,7 @@
         }}
         download
         aria-label="Download resume as PDF"
-        class={resumeClicked ? 'font-lalezar text-3xl py-5 text-bubble-gum' : 'font-lalezar text-3xl py-5 text-coffee'}
+        class={resumeClicked ? 'font-lalezar py-5 text-3xl text-bubble-gum' : 'font-lalezar text-3xl py-5 text-coffee'}
       >
         Resume <span class="font-lato text-xl">[PDF]</span>
       </a>
