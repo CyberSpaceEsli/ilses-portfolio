@@ -47,8 +47,8 @@
        <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
       <li>
         <a
-          href="/resume"
-          download
+          href="/cv-ilselöhr.pdf"
+          download="cv-ilselöhr.pdf"
           title="Download CV"
           onclick={() => (resumeClicked = true)}
           class={isActive('/resume') ? 'group px-2 text-bubble-gum' : 'group px-2 hover:text-bubble-gum'}
@@ -136,13 +136,13 @@
       <div class="h-px w-40 border-t border-dashed border-latte/25"></div>
 
 
-      <a
-        href="/resume"
+      <a   
+        href="/cv-ilselöhr.pdf"
+        download="cv-ilselöhr.pdf"
         onclick={() => {
           resumeClicked = true;
           closeMenu();
         }}
-        download
         aria-label="Download resume as PDF"
         class={resumeClicked ? 'font-lalezar py-5 text-3xl text-bubble-gum' : 'font-lalezar text-3xl py-5 text-coffee'}
       >

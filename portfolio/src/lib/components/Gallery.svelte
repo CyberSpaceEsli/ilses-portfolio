@@ -2,7 +2,7 @@
   const photos = [
     { src: '/assets/photos/boats.JPG', alt: 'Sunset picture of fishers boats', caption: 'Fisher boats', rotate: '-rotate-1', height: 'h-32 sm:h-36 lg:64 lg:68' },
     { src: '/assets/photos/sheep.jpg', alt: 'Sheep with grass in mouth', caption: 'Sheeps', rotate: 'rotate-2', height: 'h-28 sm:h-32 lg:48 lg:50' },
-    { src: '/assets/photos/thuebingen.JPG', alt: 'City of thuebingen in golden hour', caption: 'Thübingen', rotate: '-rotate-2', height: 'h-24 sm:h-28 lg:42 lg:44' }
+    { src: '/assets/photos/thuebingen.JPG', alt: 'City of tuebingen in golden hour', caption: 'Tübingen', rotate: '-rotate-2', height: 'h-24 sm:h-28 lg:42 lg:44' }
   ];
 
 </script>
