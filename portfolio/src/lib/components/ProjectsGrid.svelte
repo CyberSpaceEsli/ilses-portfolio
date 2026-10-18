@@ -184,6 +184,8 @@
 								<img
 									src={img.src}
 									alt={img.alt}
+									loading="lazy"
+  									decoding="async"
 									class="absolute rounded-2xl border-[7px]
 	                {img.pos ?? positions[j]} {img.m ?? mobilePositions[j]}
 	                {project.frame} {project.mFrame ?? project.frame.replace('lg:', 'max-lg:')}"

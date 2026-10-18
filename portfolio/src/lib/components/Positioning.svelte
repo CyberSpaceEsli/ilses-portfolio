@@ -13,7 +13,7 @@
       z: 'z-10'
     },
     {
-      label: 'technology',
+      label: 'engineering',
       bg: 'bg-pebble',
       text: 'text-coffee',
       size: 'w-[30%]',
@@ -62,17 +62,15 @@
     <!-- Introduction -->
     <div class="">
       <h3 class="text-5xl font-lalezar tracking-tight">
-        Between design, technology & product
+        Between design, engineering & product
       </h3>
       <p class="mt-4 max-w-2xl text-lg leading-relaxed">
-        With a background in computer science and a strong interest in design, I see myself as a <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">Web & UI/UX enthusiast</span>. In order to craft meaningful digital experiences, I bring together user-centered thinking, frontend development and product understanding. This is how I connect the dots between how an experience serves the user, how it works, and why it matters.
+        With a background in computer science and a strong interest in design, I'm interested in roles such as <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">UI/UX Designer</span> or <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">Design Engineer</span>. I craft meaningful digital experiences by bringing together user-centered thinking, frontend engineering and product understanding. This is how I connect the dots between how an experience serves the user, how it works, how it looks and why it matters.
 		</p>
 
         <p class="mt-12 max-w-2xl text-lg leading-relaxed hidden xl:block">
-		  I enjoy working across all three disciplines, turning first ideas into tangible prototypes, bridging the gap between design intent and technical implementation, and finding solutions to real user problems. 
-      I see myself in roles such as <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">UX Designer/Engineer</span> or <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">Digital Technologist</span>, 
-      where I can embrace emerging trends and experiment with new ways to push digital experieces forward. 
-		</p>
+	      I stay curious and up to date through UX blogs, industry articles, and leading practitioners on LinkedIn. Currently, I'm keen about <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">automating</span> the translation of <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">design systems into code</span>, helping engineers and AI agents implement designs faithfully, while reducing iteration cycles and accelerate delivery without compromising product quality.
+		  </p>
     </div>
 
 
@@ -128,9 +126,7 @@
 </div>
 
      <p class="mt-4 lg:mt-12 max-w-2xl text-lg leading-relaxedn xl:hidden">
-		I enjoy working across all three disciplines, turning first ideas into tangible prototypes, bridging the gap between design intent and technical implementation, and finding solutions to real user problems. 
-      I see myself in roles such as <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">UX Designer/Engineer</span> or <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">Digital Technologist</span>, 
-      where I can embrace emerging trends and experiment with new ways to push digital experieces forward. 
+		I stay curious and up to date through UX blogs, industry articles, and leading practitioners on LinkedIn. Currently, I'm keen about <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">automating</span> the translation of <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">design systems into code</span>, helping engineers and AI agents implement designs faithfully, while reducing iteration cycles and accelerate delivery without compromising product quality.
 	</p>
 
   </div>

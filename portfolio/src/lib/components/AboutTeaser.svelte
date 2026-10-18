@@ -60,6 +60,8 @@
           <img
             src={photo.src}
             alt={photo.alt}
+            loading="lazy"
+  					decoding="async"
             class="w-full {photo.height} rounded-md object-cover"
           />
         </div>

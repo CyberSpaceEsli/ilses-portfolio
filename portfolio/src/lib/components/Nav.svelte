@@ -57,7 +57,7 @@
         <span class={resumeClicked || isActive('/resume')
           ? 'inline-flex items-center border-b-2 border-dashed border-bubble-gum'
           : 'inline-flex items-center hover:border-b-2 hover:border-dashed group-hover:border-bubble-gum'}>
-          <span class={resumeClicked || isActive('/resume') ? 'text-bubble-gum' : 'text-coffee hover:text-bubble-gum'}>resume</span>
+          <span class={resumeClicked || isActive('/resume') ? 'text-bubble-gum' : 'text-coffee group-hover:text-bubble-gum'}>resume</span>
           <svg
             class={resumeClicked || isActive('/resume')
               ? 'h-8 w-8 shrink-0 translate-y-1 text-bubble-gum transition-transform duration-150'

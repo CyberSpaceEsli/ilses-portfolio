@@ -5,7 +5,6 @@
   import Hero from '$lib/components/Hero.svelte';
   import Nav from '$lib/components/Nav.svelte';
   import ProjectsGrid from '$lib/components/ProjectsGrid.svelte';
-  import Values from '$lib/components/Positioning.svelte';
   import Positioning from '$lib/components/Positioning.svelte';
 
   let topMarker = $state();

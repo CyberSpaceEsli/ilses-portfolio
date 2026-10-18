@@ -12,7 +12,7 @@
           <p class="relative z-10 text-lg leading-relaxed text-coffee">
             "I am pleased to provide this letter of recommendation for Ms. Ilse Löhr, whom I have had the pleasure of supervising and teaching during her studies in the Masters program Web Engineering at Chemnitz University of Technology. [...] Throughout her studies, Ms. Löhr participated in numerous courses offered by our group, consistently demonstrating a high level of <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">engagement, professionalism, and intellectual curiosity.</span> [...] Most recently, I had the opportunity to supervise her master's thesis, in which she excelled and consistently
             demonstrated a responsible and professional presence. Ms. Löhr maintained an<span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">exemplary work ethic</span>: she was
-            always punctual for our scheduled meetings, <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">proactively prepared</span>, and consistently <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">delivered high-quality</span> results."
+            always punctual for our scheduled meetings, <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">proactively prepared</span>, and consistently <span class="border-b-2 border-bubble-gum hover:bg-bubble-gum p-1">delivered high-quality results</span>."
           </p>
           <div class="mt-6 block text-lg font-lalezar text-coffee">— Dr. Sebastian Heil, <span class="ml-1 text-base font-lato text-coffee/70">senior researcher (tenured) of the chair VSR at Chemnitz University of Technology</span></div>
 

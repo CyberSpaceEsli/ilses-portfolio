@@ -81,7 +81,7 @@
       <div class="relative h-32 w-32 shrink-0 md:h-64 md:w-64 lg:h-85 lg:w-85">
         
         <div class="absolute z-10 inset-0 flex items-center justify-center rounded-full border-4 border-coffee bg-pebble text-pebble shadow-sm">
-          <img src="/assets/p8.png" alt="Portrait of Ilse Löhr" class="h-full w-full rounded-full object-cover object-top" />
+          <img src="/assets/p8.png" loading="lazy" decoding="async" alt="Portrait of Ilse Löhr" class="h-full w-full rounded-full object-cover object-top" />
         </div>
         {#each circles as c}
           <span class="absolute {c.z} {c.pos} {c.size} rounded-full {c.bg} border-4 border-coffee"></span>
@@ -95,7 +95,7 @@
         <p class="text-lg mb-4 leading-relaxed md:mb-2 text-coffee md:max-w-xl lg:max-w-xl">
           Born in the Netherlands, but based in Dresden, Germany (open to relocation), I’m fluent in German, Dutch, and English. 
           With a Master’s in Web Engineering, I bring a passion for creating user-centered digital experiences that are distinctive, intuitive and inclusive.
-          I'm now looking for a position where I can adapt to the latest trends and thrive at the intersection of design, technology & product.
+          I'm now looking for a position where I can adapt to the latest trends and thrive at the intersection of design, engineering & product.
         </p>
        
       </div>
@@ -107,7 +107,7 @@
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">What I'm into</h3>
       <p class="mt-4 text-lg leading-relaxed mb-2 max-w-lg">
 			In my free time, I enjoy various activities that keep me inspired and balanced. Most often, you'll find me with my camera at hand, capturing moments.
-      <span class="lg:whitespace-nowrap">Don't hesitate to browse my work: </span>
+      <span class="lg:whitespace-nowrap">Don't hesitate to view my photos: </span>
 		  </p>
       <a href="/gallery"
             onclick={() => (galleryClicked = true)}
@@ -150,9 +150,9 @@
     <!-- Work experience -->
     <section>
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">Where I've worked</h3>
-      <div class="mt-10 flex flex-col divide-y divide-dashed divide-latte/40">
+      <div class="mt-10 flex flex-col divide-y divide-dashed divide-coffee/25">
         <div class="flex items-start gap-5 py-6">
-          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pebble font-lalezar text-sm text-coffee">
             <!-- swap for: <img src="/assets/logos/fraunhofer.svg" alt="Fraunhofer IWU logo" class="h-8 w-8 object-contain" /> -->
             FH
           </div>
@@ -166,13 +166,13 @@
           </div>
         </div>
         <div class="flex items-start gap-5 py-6">
-          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pebble font-lalezar text-sm text-coffee">
             <!-- swap for: <img src="/assets/logos/ostec.svg" alt="ostec GmbH logo" class="h-8 w-8 object-contain" /> -->
             OS
           </div>
           <div class="flex flex-1 flex-col gap-1 sm:flex-row sm:justify-between sm:gap-8">
             <div>
-              <h3 class="font-medium text-coffee">Trainee Role — Webmaster</h3>
+              <h3 class="font-medium text-coffee">Trainee Role / Webmaster</h3>
               <p class="text-sm text-coffee/60">ostec GmbH</p>
               <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Maintained, optimized, and developed the company websites within a Holacracy-run organization.</p>
             </div>
@@ -185,9 +185,9 @@
     <!-- Education -->
     <section>
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee pt-24">What I've studied</h3>
-      <div class="mt-10 flex flex-col divide-y divide-dashed divide-latte/40">
+      <div class="mt-10 flex flex-col divide-y divide-dashed divide-coffee/25">
         <div class="flex items-start gap-5 py-6">
-          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pebble font-lalezar text-sm text-coffee">
             <!-- swap for: <img src="/assets/logos/tu-chemnitz.svg" alt="Chemnitz University of Technology logo" class="h-8 w-8 object-contain" /> -->
             TU
           </div>
@@ -201,7 +201,7 @@
           </div>
         </div>
         <div class="flex items-start gap-5 py-6">
-          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coffee font-lalezar text-sm text-pebble">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pebble font-lalezar text-sm text-coffee">
             <!-- swap for: <img src="/assets/logos/dhsn.svg" alt="Dual University Saxony logo" class="h-8 w-8 object-contain" /> -->
             DH
           </div>
@@ -221,7 +221,7 @@
     <section class="pt-24">
       <h3 class="font-lalezar text-5xl tracking-tight text-coffee">What I bring to a team</h3>
       <p class="mt-4 max-w-lg text-lg leading-relaxed">
-			Before starting my work, I challenge myself asking questions that matter, in order to get to the real problem. Furthermore, I strive to be a valuable addition and ensure chemistry within the team. The following qualities make me a valuable asset:
+			I strive to be a valuable addition and ensure chemistry within the team. The following qualities make me a valuable asset:
 		  </p>
       <div class="mt-10 flex flex-wrap gap-3">
         <span class="inline-flex items-center gap-2 rounded-full bg-pebble border-2 border-coffee px-4 py-2 text-sm text-coffee">
