@@ -195,7 +195,7 @@
             <div>
               <h3 class="font-medium text-coffee">M.Sc. Web Engineering</h3>
               <p class="text-sm text-coffee/60">Chemnitz University of Technology</p>
-              <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Taught the technical foundations of the World Wide Web, along with practical skills in developing and managing complex web-based software systems. <span class="block text-coffee">Final grade: 1.5</span></p>
+              <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Taught the technical foundations of the World Wide Web, along with practical skills in developing and managing complex web-based software systems. <span class="block text-coffee">Final grade: 1.5 (german grading system)</span></p>
             </div>
             <span class="mt-4 md:mt-0 shrink-0 text-sm text-coffee/60">Sept. 2023 – March 2026</span>
           </div>
@@ -209,7 +209,7 @@
             <div>
               <h3 class="font-medium text-coffee">B.Eng. Media Informatics</h3>
               <p class="text-sm text-coffee/60">Dual University Saxony, Dresden</p>
-              <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Learned the foundations of computer science and digital media processing. <span class="block text-coffee">Final grade: 1.7</span></p>
+              <p class="mt-2 max-w-md text-sm leading-relaxed text-coffee/80">Learned the foundations of computer science and digital media processing. <span class="block text-coffee">Final grade: 1.7 (german grading system)</span></p>
             </div>
             <span class="mt-4 md:mt-0 shrink-0 text-sm text-coffee/60">Oct. 2020 – Sept. 2023</span>
           </div>

@@ -77,10 +77,10 @@
 			]
 		},
 		{
-			name: "MoodChange",
+			name: "Mood Change",
 			category: "iOS App",
-			href: "https://apps.apple.com/de/app/walkdd/id6761303789",
-			description: "Negative emotional patterns can be difficult to notice, let alone change. Moodchange is aniOS app, developed also as family project. It helps users recognize and shift negative emotional patterns to positive ones using the RAIN method. I designed the logo, color scheme, and UX flow of the app.",
+			href: "https://apps.apple.com/de/app/mood-change/id6744898593",
+			description: "Negative emotional patterns can be difficult to notice, let alone change. Mood Change is aniOS app, developed also as family project. It helps users recognize and shift negative emotional patterns to positive ones using the RAIN method. I designed the logo, color scheme, and UX flow of the app.",
 			frame: "lg:border-pale-yellow",
 			mFrame: "max-lg:border-pale-yellow",
 			hoverCircle: "fill-pebble",
