@@ -47,7 +47,7 @@
        <li class="bg-bubble-gum h-1.5 w-1.5 rounded-full bg-pink" aria-hidden="true"></li>
       <li>
         <a
-          href="/cv-ilselöhr.pdf"
+          href="/cv-ilse-loehr.pdf"
           download="cv-ilselöhr.pdf"
           title="Download CV"
           onclick={() => (resumeClicked = true)}
@@ -137,7 +137,7 @@
 
 
       <a   
-        href="/cv-ilselöhr.pdf"
+        href="/cv-ilse-loehr.pdf"
         download="cv-ilselöhr.pdf"
         onclick={() => {
           resumeClicked = true;
