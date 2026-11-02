@@ -31,7 +31,10 @@
     <title>About | Ilse Löhr</title>
     <meta property="og:title" content="About | Ilse Löhr" />
     <meta property="og:description" content="About page of Ilse Löhr, a web and UX/UI enthusiast with a passion for unique, intutive, and inclusive design." />
-    <meta property="og:image" content="/static/assets/portfolio-og-preview.png" />
+    <meta property="og:image" content="https://hangwithilse.com/assets/portfolio-og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:url" content="https://hangwithilse.com/about" />
     <meta property="og:type" content="website" />
 </svelte:head>  
