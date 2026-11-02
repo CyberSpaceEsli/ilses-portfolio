@@ -4,11 +4,15 @@
 </script>
 
 <svelte:head>
-	<title>Impressum | Ilse Löhr</title>
+	<title>Legal Notice | Ilse Löhr</title>
+  <meta property="og:title" content="Legal Notice | Ilse Löhr" />
 	<meta
-		name="description"
-		content="Impress for the personal portfolio of Ilse Löhr with contact information and legal notices."
+		property="og:description"
+		content="Legal notice for the portfolio of Ilse Löhr with contact information."
 	/>
+  <meta property="og:image" content="/static/assets/portfolio-og-preview.png" />
+  <meta property="og:url" content="https://hangwithilse.com/legal" />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <Nav />

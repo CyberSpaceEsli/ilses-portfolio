@@ -29,10 +29,11 @@
 
 <svelte:head>
     <title>About | Ilse Löhr</title>
-    <meta
-        name="description"
-        content="About page for the personal portfolio of Ilse Löhr, a web and UX/UI enthusiast with a passion for unique, intutive, and inclusive design."
-    />  
+    <meta property="og:title" content="About | Ilse Löhr" />
+    <meta property="og:description" content="About page of Ilse Löhr, a web and UX/UI enthusiast with a passion for unique, intutive, and inclusive design." />
+    <meta property="og:image" content="/static/assets/portfolio-og-preview.png" />
+    <meta property="og:url" content="https://hangwithilse.com/about" />
+    <meta property="og:type" content="website" />
 </svelte:head>  
 
 <Nav />
